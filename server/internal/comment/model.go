@@ -7,11 +7,11 @@ import (
 )
 
 type Comment struct {
-	comment_id uint `gorm:"primaryKey"`
-	chapter_id uint `gorm:"not null"`
-	user_id uuid.UUID `gorm:"type:uuid, not null"`
-	icon_id uint
-	image string `gorm:"type: varchar(255)"`
-	createAt time.Time
-	updateAt time.Time
+	comment_id uint      `gorm:"primaryKey"`
+	chapter_id uint      `gorm:"not null;index"`
+	user_id    uuid.UUID `gorm:"type:uuid;not null;index"`
+	icon_id    uint
+	image      string `gorm:"type: varchar(255);not null"`
+	createAt   time.Time
+	updateAt   time.Time
 }
