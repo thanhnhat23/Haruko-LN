@@ -1,8 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useSyncExternalStore } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 import { motion } from "motion/react"
 import { Search, Compass, MessageSquare, Info, Upload, MessageCircleWarning, ShieldKeyhole, ReceiptText, Users, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -18,25 +19,49 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
+const subscribe = () => () => { }
+
+export function useIsMounted() {
+  return useSyncExternalStore(
+    subscribe,
+    () => true,  // Client: true
+    () => false  // Server: false
+  )
+}
+
 export function Navbar() {
-  const [theme, setTheme] = useState<"light" | "dark">("dark")
-  const [mounted, setMounted] = useState(false)
+  const pathname = usePathname()
+  const isMounted = useIsMounted()
+
+  // Always check both router pathname and native window.location to ensure reliable reader hiding
+  const currentPath = pathname || (typeof window !== "undefined" ? window.location.pathname : "")
+  const isReaderPage = Boolean(currentPath && currentPath.includes("/chapter/"))
+
   const [visible, setVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    if (typeof window !== "undefined") {
+      const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null
+      return savedTheme || "dark"
+    }
+    return "dark"
+  })
+
   // Initialize theme from localStorage on client side mount to avoid hydration mismatch
   useEffect(() => {
-    setMounted(true)
-    const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null
-    const initialTheme = savedTheme || "dark"
-    setTheme(initialTheme)
-    if (initialTheme === "dark") {
+    if (theme === "dark") {
       document.documentElement.classList.add("dark")
     } else {
       document.documentElement.classList.remove("dark")
     }
-  }, [])
+    localStorage.setItem("theme", theme)
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"))
+  }
 
   // Listen to window scroll events to trigger scroll-to-hide behavior
   useEffect(() => {
@@ -60,15 +85,8 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [lastScrollY])
 
-  // Handle theme changes
-  const handleThemeChange = (newTheme: "light" | "dark") => {
-    setTheme(newTheme)
-    localStorage.setItem("theme", newTheme)
-    if (newTheme === "dark") {
-      document.documentElement.classList.add("dark")
-    } else {
-      document.documentElement.classList.remove("dark")
-    }
+  if (!isMounted || isReaderPage) {
+    return null
   }
 
   return (
@@ -76,10 +94,10 @@ export function Navbar() {
       initial={{ y: 0, opacity: 1 }}
       animate={{ y: visible ? 0 : -80, opacity: visible ? 1 : 0 }}
       transition={{ duration: 0.8, ease: [0.5, 1, 0.5, 1] }}
-      className="fixed top-0 left-0 right-0 z-50 w-full border-b border-border/40 bg-background/30 backdrop-blur-xs transition-colors duration-300"
+      className="haruko-global-navbar fixed top-0 left-0 right-0 z-50 w-full border-b border-border/40 bg-background/30 backdrop-blur-xs transition-colors duration-300"
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 relative">
-        
+
         {/* Left Section: Logo & Brand */}
         <Link href="/" className="flex items-center gap-2 group" onClick={() => setMenuOpen(false)}>
           <div className="relative w-12 h-12 overflow-hidden group-hover:border-foreground/40 transition-colors">
@@ -100,23 +118,23 @@ export function Navbar() {
         {/* Center Section: Navigation Menu */}
         <div className="hidden md:flex items-center">
           <NavigationMenu>
-            <NavigationMenuList className="flex items-center gap-1">
+            <NavigationMenuList className="flex items-center gap-8">
               <NavigationMenuItem>
-                <Link href="/danh-sach" className={`${navigationMenuTriggerStyle()} text-sm! font-bold! text-muted-foreground hover:text-foreground transition-colors bg-transparent hover:bg-accent/40 py-2 px-3 flex items-center`}>
+                <Link href="/danh-sach" className={`${navigationMenuTriggerStyle()} text-sm! font-bold! text-foreground bg-transparent hover:bg-accent/40 py-2 px-3 flex items-center`}>
                   <Compass className="size-4 mr-1" />
                   Danh sách
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href="/thao-luan" className={`${navigationMenuTriggerStyle()} text-sm! font-bold! text-muted-foreground hover:text-foreground transition-colors bg-transparent hover:bg-accent/40 py-2 px-3 flex items-center`}>
+                <Link href="/thao-luan" className={`${navigationMenuTriggerStyle()} text-sm! font-bold! text-foreground bg-transparent hover:bg-accent/40 py-2 px-3 flex items-center`}>
                   <MessageSquare className="size-4 mr-1" />
                   Thảo luận
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger className={`${navigationMenuTriggerStyle()} text-sm! font-bold! text-muted-foreground hover:text-foreground transition-colors bg-transparent hover:bg-accent/40 py-2 px-3`}>
+                <NavigationMenuTrigger className={`${navigationMenuTriggerStyle()} text-sm! font-bold! text-foreground bg-transparent hover:bg-accent/40 py-2 px-3`}>
                   <Info className="size-4 mr-1" />
                   Thông tin
                 </NavigationMenuTrigger>
@@ -129,11 +147,11 @@ export function Navbar() {
                     <MessageCircleWarning className="size-4 mr-2" />
                     Góp ý - báo lỗi
                   </NavigationMenuLink>
-                  <NavigationMenuLink href="/chinh-sach" className="text-muted-foreground text-sm! font-bold! hover:text-foreground hover:bg-accent/60 px-3 py-2 rounded-md transition-colors">
+                  <NavigationMenuLink href="/policy" className="text-muted-foreground text-sm! font-bold! hover:text-foreground hover:bg-accent/60 px-3 py-2 rounded-md transition-colors">
                     <ShieldKeyhole className="size-4 mr-2" />
                     Chính sách bảo mật
                   </NavigationMenuLink>
-                  <NavigationMenuLink href="/dieu-khoan" className="text-muted-foreground text-sm! font-bold! hover:text-foreground hover:bg-accent/60 px-3 py-2 rounded-md transition-colors">
+                  <NavigationMenuLink href="/terms" className="text-muted-foreground text-sm! font-bold! hover:text-foreground hover:bg-accent/60 px-3 py-2 rounded-md transition-colors">
                     <ReceiptText className="size-4 mr-2" />
                     Điều khoản sử dụng
                   </NavigationMenuLink>
@@ -161,10 +179,10 @@ export function Navbar() {
 
           {/* Theme Toggle */}
           <div className="flex items-center justify-center p-2 rounded-md border border-input hover:bg-accent/40 transition-colors w-9 h-9">
-            {mounted ? (
+            {isMounted ? (
               <AnimatedThemeToggler
                 theme={theme}
-                onThemeChange={handleThemeChange}
+                onThemeChange={toggleTheme}
                 className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
               />
             ) : (
@@ -202,59 +220,59 @@ export function Navbar() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <Link 
-                href="/danh-sach" 
+              <Link
+                href="/danh-sach"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm font-bold text-muted-foreground hover:text-foreground hover:bg-accent/60 px-3 py-2 rounded-md transition-colors flex items-center gap-2"
               >
                 <Compass className="size-4" />
                 Danh sách
               </Link>
-              <Link 
-                href="/thao-luan" 
+              <Link
+                href="/thao-luan"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm font-bold text-muted-foreground hover:text-foreground hover:bg-accent/60 px-3 py-2 rounded-md transition-colors flex items-center gap-2"
               >
                 <MessageSquare className="size-4" />
                 Thảo luận
               </Link>
-              
+
               <div className="border-t border-border/40 my-1" />
-              
-              <Link 
-                href="/dang-truyen" 
+
+              <Link
+                href="/dang-truyen"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm font-semibold text-muted-foreground/80 hover:text-foreground hover:bg-accent/60 px-3 py-2 rounded-md transition-colors flex items-center gap-2"
               >
                 <Upload className="size-4" />
                 Đăng truyện
               </Link>
-              <Link 
-                href="/gop-y" 
+              <Link
+                href="/gop-y"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm font-semibold text-muted-foreground/80 hover:text-foreground hover:bg-accent/60 px-3 py-2 rounded-md transition-colors flex items-center gap-2"
               >
                 <MessageCircleWarning className="size-4" />
                 Góp ý - báo lỗi
               </Link>
-              <Link 
-                href="/chinh-sach" 
+              <Link
+                href="/policy"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm font-semibold text-muted-foreground/80 hover:text-foreground hover:bg-accent/60 px-3 py-2 rounded-md transition-colors flex items-center gap-2"
               >
                 <ShieldKeyhole className="size-4" />
                 Chính sách bảo mật
               </Link>
-              <Link 
-                href="/dieu-khoan" 
+              <Link
+                href="/terms"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm font-semibold text-muted-foreground/80 hover:text-foreground hover:bg-accent/60 px-3 py-2 rounded-md transition-colors flex items-center gap-2"
               >
                 <ReceiptText className="size-4" />
                 Điều khoản sử dụng
               </Link>
-              <Link 
-                href="/gioi-thieu" 
+              <Link
+                href="/gioi-thieu"
                 onClick={() => setMenuOpen(false)}
                 className="text-sm font-semibold text-muted-foreground/80 hover:text-foreground hover:bg-accent/60 px-3 py-2 rounded-md transition-colors flex items-center gap-2"
               >

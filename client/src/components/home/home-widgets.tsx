@@ -86,7 +86,7 @@ export function RecentlyReadWidget() {
       </div>
       <div className="space-y-3">
         {RECENTLY_READ.map((item) => (
-          <Link href="#" key={item.id} className="flex items-center gap-3 group hover:opacity-85 transition-opacity">
+          <Link href={`/novel/${item.id}`} key={item.id} className="flex items-center gap-3 group hover:opacity-85 transition-opacity">
             <div className="relative w-8 h-10 rounded-sm overflow-hidden border border-border/60 shrink-0 bg-accent/25">
               <Image src={item.image} alt={item.title} fill className="object-cover" sizes="40px" />
             </div>

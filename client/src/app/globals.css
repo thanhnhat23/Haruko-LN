@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -132,4 +133,33 @@
 ::view-transition-old(root), ::view-transition-new(root) {
     animation: none;
     mix-blend-mode: normal;
+}
+
+/* Reader Font Families */
+.font-be-vietnam-pro {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.font-literata {
+  font-family: "Literata", serif;
+}
+.font-lora {
+  font-family: "Lora", serif;
+}
+.font-merriweather {
+  font-family: "Merriweather", serif;
+}
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+.font-playfair {
+  font-family: "Playfair Display", serif;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

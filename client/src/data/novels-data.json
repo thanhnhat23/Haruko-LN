@@ -1,0 +1,443 @@
+{
+  "1": {
+    "id": 1,
+    "title": "\"Cậu chẳng thể hôn được đâu ha?\" Khi tôi khiến cho cô bạn thuở nhỏ luôn trêu chọc mình hiểu chuyện, cô ấy đột nhiên trở nên dễ thương hơn nhiều",
+    "originalTitle": "Osananajimi ga Zettai ni Makenai Love Comedy",
+    "author": "Sakuragi Sakura (桜木 桜)",
+    "artist": "Chino Minori (千種みのり)",
+    "thumbnail": "https://i.pinimg.com/originals/4e/2a/f4/4e2af41014d87c89b468cad0080667ca.gif",
+    "banner": "https://i.pinimg.com/originals/4b/cf/aa/4bcfaacc3c497169cd788c574fb446ba.gif",
+    "type": "Truyện dịch",
+    "status": "Đã hoàn thành",
+    "description": "“Sao chúng ta không… thử hôn nhỉ?”\n\nNam sinh cao trung năm hai, Kazami Ibuki, có một cô bạn thuở nhỏ tinh nghịch.\nCô gái được đồn đại là xinh đẹp nhất trường, với mái tóc vàng óng và đôi mắt xanh lam ngọc, Kamishiro Airi.\n\nTưởng chừng như Airi không có bất cứ cảm xúc lãng mạn nào dành cho cậu, và sẽ trêu cậu mỗi khi có cơ hội.\nThế nhưng, vào một ngày nọ, khi nghe Airi thách thức: “Cậu chẳng thể hôn được đâu ha?”, Ibuki đã bất ngờ hôn cô ấy thật.\n\nKể từ khoảnh khắc ấy, mối quan hệ giữa hai người dần thay đổi 180 độ. Cô bạn thuở nhỏ kiêu kỳ bỗng chốc trở nên e thẹn, dễ thương và ngập tràn tình cảm ngọt ngào vượt ngoài tầm kiểm soát…!",
+    "tags": [
+      {
+        "id": 1,
+        "name": "Comedy",
+        "slug": "comedy"
+      },
+      {
+        "id": 2,
+        "name": "Romance",
+        "slug": "romance"
+      },
+      {
+        "id": 3,
+        "name": "School Life",
+        "slug": "school-life"
+      },
+      {
+        "id": 4,
+        "name": "Shounen",
+        "slug": "shounen"
+      },
+      {
+        "id": 5,
+        "name": "Adapted to Manga",
+        "slug": "adapted-to-manga"
+      },
+      {
+        "id": 6,
+        "name": "Harem",
+        "slug": "harem"
+      }
+    ],
+    "views": 806426,
+    "wordCount": 119406,
+    "ratingScore": 4.9,
+    "ratingCount": 17,
+    "bookmarkCount": 3762,
+    "totalComments": 1675,
+    "discussionCount": 432,
+    "lastUpdate": "4 tháng trước",
+    "translator": {
+      "name": "Arteria",
+      "avatar": "https://i.pinimg.com/originals/c5/bf/9b/c5bf9b4801ee89b2c9d56924a9357217.gif",
+      "role": "CHỦ THỚT",
+      "rankTitle": "Đại Sứ"
+    },
+    "volumes": [
+      {
+        "id": 101,
+        "number": 1,
+        "title": "Lời thách thức từ cô bạn thuở nhỏ",
+        "cover": "https://i.pinimg.com/originals/4e/2a/f4/4e2af41014d87c89b468cad0080667ca.gif",
+        "chapters": [
+          {
+            "id": 1001,
+            "volumeId": 101,
+            "chapterNumber": 0,
+            "title": "Minh họa tập 1",
+            "orderIndex": 1,
+            "wordCount": 120,
+            "createdAt": "16/05/2023",
+            "hasIllustration": true,
+            "images": [
+              {
+                "id": 101,
+                "chapterId": 1001,
+                "imageUrl": "https://i.pinimg.com/originals/4b/cf/aa/4bcfaacc3c497169cd788c574fb446ba.gif",
+                "orderIndex": 1,
+                "createdAt": "16/05/2023"
+              },
+              {
+                "id": 102,
+                "chapterId": 1001,
+                "imageUrl": "https://i.pinimg.com/originals/4e/2a/f4/4e2af41014d87c89b468cad0080667ca.gif",
+                "orderIndex": 2,
+                "createdAt": "16/05/2023"
+              }
+            ],
+            "content": "## Tuyển tập tranh minh họa màu - Tập 1\n\n> *\"Cậu chẳng thể hôn được đâu ha?\"*\n\nXin gửi đến các độc giả bộ tranh minh họa màu chính thức của Tập 1. Mọi bản quyền thuộc về tác giả Sakuragi Sakura và họa sĩ minh họa Chino Minori.\n\n*Nhấn vào ảnh để xem kích thước đầy đủ.*"
+          },
+          {
+            "id": 1002,
+            "volumeId": 101,
+            "chapterNumber": 0.5,
+            "title": "Mở đầu: Lời mở đầu vụng về",
+            "orderIndex": 2,
+            "wordCount": 1850,
+            "createdAt": "16/05/2023",
+            "content": "## Mở đầu: Lời mở đầu vụng về\n\nÁnh nắng buổi sớm tháng Năm rọi qua khung cửa sổ lớp học, nhuộm vàng những vệt bụi lơ lửng trong không trung.\n\nTôi — Kazami Ibuki, một học sinh cao trung bình thường đến mức chẳng có gì để khoe khoang, lúc này đang gục mặt xuống bàn với tâm trạng uể oải. Tiếng chuông báo hiệu giờ ra chơi vừa dứt, nhưng sự bình yên của tôi cũng chấm dứt theo ngay sau đó.\n\n\"Ibuki-kun~ Vẫn bộ mặt buồn ngủ như mọi khi nhỉ?\"\n\nMột giọng nói lanh lảnh, pha lẫn nét tinh nghịch quen thuộc vang lên bên tai. Kèm theo đó là một làn hương cam chanh thoang thoảng khiến sống mũi tôi hơi cay cay.\n\nKhông cần ngẩng đầu lên, tôi cũng biết chủ nhân của giọng nói đó là ai.\n\nKamishiro Airi.\n\nCô bạn thuở nhỏ sống ngay sát vách nhà tôi từ thuở còn cởi truồng tắm mưa. Và đồng thời, cũng là người con gái được cả khối năm hai ngầm công nhận là hoa khôi với mái tóc vàng óng ả cùng đôi mắt xanh biếc như ngọc bích.\n\n\"Airi à... tha cho tớ đi. Hôm qua tớ thức khuya cày bài luận môn Lịch sử đấy.\"\n\n\"Hừm~ thế cơ à? Nhưng mà nhìn mặt cậu như thể vừa bị ai đó 'hút hết sinh khí' vậy đó. Đáng thương ghê chưa này~\"\n\nAiri khẽ nghiêng đầu, nở một nụ cười ranh mãnh đặc trưng. Bàn tay nhỏ nhắn của cô nàng chống lên bàn tôi, chiếc áo đồng phục hơi trễ xuống làm lộ ra chiếc cổ thanh mảnh trắng ngần.\n\n\"Này, nhìn đi đâu đấy đồ biến thái?\"\n\n\"Ai thèm nhìn chứ! Cậu đứng chắn hết cả ánh sáng của tớ rồi!\"\n\n\"Fufufu, ngại rồi kìa. Mặt đỏ như trái cà chua rồi nhé! Đúng là Ibuki ngốc nghếch chẳng bao giờ thay đổi.\"\n\nTôi thở dài đánh thượt. Những ngày tháng yên ả của tôi dường như chưa từng tồn tại kể từ khi bước chân vào ngôi trường này cùng cô nàng rắc rối này..."
+          },
+          {
+            "id": 1003,
+            "volumeId": 101,
+            "chapterNumber": 1,
+            "title": "Chương 01: Dạy một bài học từ nụ hôn đầu (Phần 1)",
+            "orderIndex": 3,
+            "wordCount": 4890,
+            "createdAt": "16/05/2023",
+            "hasIllustration": true,
+            "images": [
+              {
+                "id": 1,
+                "chapterId": 1003,
+                "imageUrl": "https://i.pinimg.com/1200x/c1/40/b9/c140b9d0000c0ea81890ff72efd3164c.jpg",
+                "orderIndex": 1,
+                "createdAt": "16/05/2023"
+              },
+              {
+                "id": 2,
+                "chapterId": 1003,
+                "imageUrl": "https://i.pinimg.com/1200x/71/db/a1/71dba1cfda91db7afce6f693e389c7c4.jpg",
+                "orderIndex": 2,
+                "createdAt": "16/05/2023"
+              }
+            ],
+            "content": "Buổi chiều hôm ấy, câu lạc bộ Văn học không có ai ngoài hai chúng tôi.\n\nTiếng ve kêu râm ran bên ngoài sân trường báo hiệu mùa hè đang đến rất gần. Trong căn phòng học cũ kỹ ở góc tầng ba, quạt trần quay kẽo kẹt từng hồi nhịp nhàng.\n\n\"Này Ibuki, cậu đã đọc cuốn tiểu thuyết lãng mạn tớ đưa tuần trước chưa?\"\n\nAiri ngồi vắt vẻo trên bục cửa sổ, hai chân đung đưa trong không trung. Làn váy đồng phục bay nhẹ theo từng cơn gió thoảng.\n\n\"Đọc rồi. Nhưng mà... cái đoạn nam chính đột ngột hôn nữ chính ở chương ba vô lý hết sức. Ngoài đời thực làm gì có ai làm thế.\"\n\n\"Hể~? Vô lý chỗ nào chứ? Người ta gọi đó là sự lãng mạn bất ngờ đấy, đồ khô khan!\"\n\nAiri nhảy xuống khỏi bục cửa sổ, bước từng bước nhẹ nhàng về phía bàn tôi. Cô nàng cúi người xuống, khuôn mặt xinh đẹp bất ngờ áp sát đến mức tôi có thể cảm nhận rõ ràng hơi thở ấm áp phả vào gò má.\n\n\"Hay là... Ibuki của chúng ta chưa từng có kinh nghiệm nên mới thấy nó vô lý nhỉ?\"\n\n\"C-Cậu nói nhảm gì đấy...\"\n\n\"Fufufu~ Quả nhiên là thế rồi! Cậu chẳng thể hôn được đâu ha? Đứng trước một cô gái dễ thương như tớ mà tim cậu đang đập thình thịch như trống trận kìa!\"\n\nKhoảng cách giữa hai khuôn mặt lúc này chưa đầy mười centimet. Đôi môi hồng hào của Airi khẽ mấp máy, ánh mắt ngập tràn vẻ đắc thắng và khiêu khích quen thuộc.\n\n*Cậu chẳng thể hôn được đâu ha?*\n\nCâu nói đó như một ngòi nổ kích hoạt sự bồng bột của một thằng con trai mười bảy tuổi. Một sợi dây lí trí nào đó trong đầu tôi đột ngột đứt phựt.\n\n\"...Cậu nghĩ tớ không dám thật à?\"\n\n\"Ơ...?\"\n\nTrước khi Airi kịp nhận ra sự thay đổi trong ánh mắt của tôi, tôi đã đưa tay ra nắm lấy cổ tay mảnh khảnh của cô ấy, kéo nhẹ về phía mình.\n\n*Chụt.*\n\nMột cảm giác mềm mại, ngọt ngào đến ngỡ ngàng chạm vào môi tôi.\n\nCả căn phòng dường như chìm vào khoảng lặng tuyệt đối. Tiếng ve kêu ngoài cửa sổ dường như biến mất, tiếng quạt trần cũng không còn nghe thấy nữa. Chỉ còn lại tiếng đập loạn xạ của hai trái tim đang kề sát nhau.\n\nMắt Airi mở to hết cỡ, đồng tử co thắt lại trong sự bàng hoàng tột độ. Khuôn mặt cô nàng từ ngạc nhiên chuyển dần sang đỏ bừng, lan từ gò má xuống tận mang tai và chiếc cổ trắng nõn.\n\n\"...I-Ibuki... cậu...\"\n\nĐôi môi cô ấy run rẩy, giọng nói lắp bắp hoàn toàn mất đi vẻ tự tin và tinh nghịch thường ngày. Đây là lần đầu tiên sau mười năm làm bạn thuở nhỏ, tôi được nhìn thấy một Kamishiro Airi e thẹn và bối rối đến mức này.\n\n---\n\n*Hết phần 1*"
+          },
+          {
+            "id": 1004,
+            "volumeId": 101,
+            "chapterNumber": 1.5,
+            "title": "Chương 01 (Phần 2): Sự bối rối sau giờ học",
+            "orderIndex": 4,
+            "wordCount": 5120,
+            "createdAt": "19/05/2023",
+            "content": "## Chương 01 (Phần 2): Sự bối rối sau giờ học\n\nNăm giây trôi qua như cả một thế kỷ.\n\nKhi tôi buông tay ra và lùi lại nửa bước, Airi dường như vẫn chưa thể tiếp nhận được những gì vừa xảy ra. Cô ấy dùng cả hai tay ôm lấy má mình, ánh mắt nhìn tôi vừa hoảng hốt, vừa ngập ngừng khó hiểu.\n\n\"...Cậu... vừa làm cái gì thế hả?!\"\n\n\"Thì... tại cậu bảo tớ 'chẳng thể hôn được đâu' mà.\"\n\n\"N-Nhưng tớ chỉ trêu thôi mà! Ai bảo cậu làm thật chứ đồ ngốc! Đồ đại ngốc! Bạo lực! Biến thái!\"\n\nAiri vớ lấy chiếc cặp sách trên bàn, giấu khuôn mặt đang đỏ như gấc chín ra sau rồi quay người chạy vụt ra khỏi phòng học. Tiếng bước chân vội vã vang vọng dọc hành lang vắng ngắt.\n\nTôi đứng trơ trọi giữa căn phòng, đưa ngón tay lên chạm nhẹ vào môi mình.\n\nVẫn còn vương vấn vị ngọt thanh nhẹ như kẹo dâu tây.\n\n\"Chết tiệt... mình vừa làm cái quái gì thế này? Ngày mai biết đối mặt với cô ấy thế nào đây...\"\n\nCả buổi tối hôm đó, tôi không thể nào tập trung làm được bất cứ việc gì. Mỗi lần nhắm mắt lại, khuôn mặt đỏ bừng cùng đôi mắt ngấn nước của Airi lại hiện lên rõ mồn một trong tâm trí."
+          },
+          {
+            "id": 1005,
+            "volumeId": 101,
+            "chapterNumber": 2,
+            "title": "Chương 02: Màn Kabedon khiến tim loạn nhịp (Phần 1)",
+            "orderIndex": 5,
+            "wordCount": 6200,
+            "createdAt": "27/05/2023",
+            "hasIllustration": true,
+            "content": "## Chương 02: Màn Kabedon khiến tim loạn nhịp (Phần 1)\n\nSáng hôm sau, bầu không khí trước cửa nhà trở nên kỳ lạ hơn bao giờ hết.\n\nNhư một thói quen suốt mười năm qua, cứ đúng 7 giờ 15 phút, tôi lại đứng trước cổng nhà Airi để cùng nhau đi bộ đến trường. Nhưng hôm nay, cánh cửa gỗ mở ra chậm hơn thường lệ năm phút.\n\nAiri bước ra, mái tóc vàng óng buộc lệch một bên thay vì xõa vai như mọi ngày. Đôi mắt cô nàng hơi thâm quầng, dường như cũng đã trải qua một đêm mất ngủ giống hệt tôi.\n\n\"...Chào buổi sáng, Ibuki.\"\n\nGiọng cô ấy lí nhí, nhỏ đến mức nếu không chú ý tôi sẽ chẳng thể nghe thấy.\n\n\"Ừ... chào buổi sáng, Airi.\"\n\nSuốt quãng đường dài một cây số từ nhà đến trường, không ai trong chúng tôi nói với nhau thêm câu nào. Nhưng sự im lặng này không hề căng thẳng hay khó chịu, mà lại tràn ngập một cảm giác ngượng ngùng đến mức ngột ngạt.\n\nMãi cho đến giờ nghỉ trưa, khi tôi đang mua bánh mì ở căng tin thì bất ngờ bị một bàn tay nắm chặt lấy cổ tay, kéo xềnh xệch về phía góc cầu thang thoát hiểm ít người qua lại."
+          }
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "id": 1,
+        "user": {
+          "id": "u_kurogane",
+          "username": "Kurogane_Ikki",
+          "avatar": "https://i.pinimg.com/originals/4e/2a/f4/4e2af41014d87c89b468cad0080667ca.gif",
+          "role": "VIP Độc Giả",
+          "rankTitle": "Tông Sư",
+          "isVerified": true
+        },
+        "score": 5,
+        "review": "Truyện cực kỳ cuốn hút! Diễn biến tâm lý nhân vật từ trêu chọc sang ngượng ngùng rồi yêu thương nhau được miêu tả rất tinh tế và tự nhiên. Nhóm dịch làm việc rất có tâm, hành văn trôi chảy và mượt mà.",
+        "createdAt": "20/07/2023",
+        "helpfulCount": 48
+      },
+      {
+        "id": 2,
+        "user": {
+          "id": "u_sakura",
+          "username": "Sakura_Blossom",
+          "avatar": "https://i.pinimg.com/originals/c5/bf/9b/c5bf9b4801ee89b2c9d56924a9357217.gif",
+          "rankTitle": "Đại Hiệp",
+          "isVerified": false
+        },
+        "score": 4.8,
+        "review": "Romcom chuẩn chỉ của năm! Nữ chính Airi tsundere kiểu này đáng yêu xỉu luôn á. Mong nhóm dịch tiếp tục ra chương đều đặn nhé!",
+        "createdAt": "05/08/2023",
+        "helpfulCount": 29
+      }
+    ],
+    "comments": [
+      {
+        "id": 101,
+        "user": {
+          "id": "u_shironeko",
+          "username": "Shironeko_29",
+          "avatar": "https://i.pinimg.com/originals/4e/2a/f4/4e2af41014d87c89b468cad0080667ca.gif",
+          "rankTitle": "Tiên Phong",
+          "isTranslator": false
+        },
+        "chapterTitle": "Chương 01: Dạy một bài học từ nụ hôn đầu (Phần 1)",
+        "content": "Cú hôn bất ngờ chất lượng quá tác giả ơi! Cười đau cả ruột đoạn em gái hoảng loạn chạy mất tích :)))",
+        "createdAt": "2 ngày trước",
+        "likes": 18,
+        "replies": [
+          {
+            "id": 1011,
+            "user": {
+              "id": "u_arteria",
+              "username": "Arteria",
+              "avatar": "https://i.pinimg.com/originals/c5/bf/9b/c5bf9b4801ee89b2c9d56924a9357217.gif",
+              "role": "CHỦ THỚT",
+              "isTranslator": true
+            },
+            "replyToUser": {
+              "id": "u_shironeko",
+              "username": "Shironeko_29"
+            },
+            "content": "Cảm ơn bạn đã ủng hộ! Mấy chương sau còn ngọt xỉu hơn nữa cơ, ráng hóng nhé haha.",
+            "createdAt": "1 ngày trước",
+            "likes": 9
+          }
+        ]
+      }
+    ]
+  },
+  "5": {
+    "id": 5,
+    "title": "Sword Art Online: Unital Ring",
+    "originalTitle": "Osananajimi ga Zettai ni Makenai Love Comedy",
+    "author": "Sakuragi Sakura (桜木 桜)",
+    "artist": "Chino Minori (千種みのり)",
+    "thumbnail": "https://i.pinimg.com/originals/4e/2a/f4/4e2af41014d87c89b468cad0080667ca.gif",
+    "banner": "https://i.pinimg.com/originals/4b/cf/aa/4bcfaacc3c497169cd788c574fb446ba.gif",
+    "type": "Truyện dịch",
+    "status": "Đã hoàn thành",
+    "description": "“Sao chúng ta không… thử hôn nhỉ?”\n\nNam sinh cao trung năm hai, Kazami Ibuki, có một cô bạn thuở nhỏ tinh nghịch.\nCô gái được đồn đại là xinh đẹp nhất trường, với mái tóc vàng óng và đôi mắt xanh lam ngọc, Kamishiro Airi.\n\nTưởng chừng như Airi không có bất cứ cảm xúc lãng mạn nào dành cho cậu, và sẽ trêu cậu mỗi khi có cơ hội.\nThế nhưng, vào một ngày nọ, khi nghe Airi thách thức: “Cậu chẳng thể hôn được đâu ha?”, Ibuki đã bất ngờ hôn cô ấy thật.\n\nKể từ khoảnh khắc ấy, mối quan hệ giữa hai người dần thay đổi 180 độ. Cô bạn thuở nhỏ kiêu kỳ bỗng chốc trở nên e thẹn, dễ thương và ngập tràn tình cảm ngọt ngào vượt ngoài tầm kiểm soát…!",
+    "tags": [
+      {
+        "id": 1,
+        "name": "Comedy",
+        "slug": "comedy"
+      },
+      {
+        "id": 2,
+        "name": "Romance",
+        "slug": "romance"
+      },
+      {
+        "id": 3,
+        "name": "School Life",
+        "slug": "school-life"
+      },
+      {
+        "id": 4,
+        "name": "Shounen",
+        "slug": "shounen"
+      },
+      {
+        "id": 5,
+        "name": "Adapted to Manga",
+        "slug": "adapted-to-manga"
+      },
+      {
+        "id": 6,
+        "name": "Harem",
+        "slug": "harem"
+      }
+    ],
+    "views": 806426,
+    "wordCount": 26344,
+    "ratingScore": 4.9,
+    "ratingCount": 17,
+    "bookmarkCount": 3762,
+    "totalComments": 1675,
+    "discussionCount": 432,
+    "lastUpdate": "Vừa xong",
+    "translator": {
+      "name": "Arteria",
+      "avatar": "https://i.pinimg.com/originals/c5/bf/9b/c5bf9b4801ee89b2c9d56924a9357217.gif",
+      "role": "CHỦ THỚT",
+      "rankTitle": "Đại Sứ"
+    },
+    "volumes": [
+      {
+        "id": 101,
+        "number": 1,
+        "title": "Lời thách thức từ cô bạn thuở nhỏ",
+        "cover": "https://i.pinimg.com/originals/4e/2a/f4/4e2af41014d87c89b468cad0080667ca.gif",
+        "chapters": [
+          {
+            "id": 1001,
+            "volumeId": 101,
+            "chapterNumber": 0,
+            "title": "Minh họa tập 1",
+            "orderIndex": 1,
+            "wordCount": 120,
+            "createdAt": "16/05/2023",
+            "hasIllustration": true,
+            "images": [
+              {
+                "id": 101,
+                "chapterId": 1001,
+                "imageUrl": "https://i.pinimg.com/originals/4b/cf/aa/4bcfaacc3c497169cd788c574fb446ba.gif",
+                "orderIndex": 1,
+                "createdAt": "16/05/2023"
+              },
+              {
+                "id": 102,
+                "chapterId": 1001,
+                "imageUrl": "https://i.pinimg.com/originals/4e/2a/f4/4e2af41014d87c89b468cad0080667ca.gif",
+                "orderIndex": 2,
+                "createdAt": "16/05/2023"
+              }
+            ],
+            "content": "## Tuyển tập tranh minh họa màu - Tập 1\n\n> *\"Cậu chẳng thể hôn được đâu ha?\"*\n\nXin gửi đến các độc giả bộ tranh minh họa màu chính thức của Tập 1. Mọi bản quyền thuộc về tác giả Sakuragi Sakura và họa sĩ minh họa Chino Minori.\n\n*Nhấn vào ảnh để xem kích thước đầy đủ.*"
+          },
+          {
+            "id": 1002,
+            "volumeId": 101,
+            "chapterNumber": 0.5,
+            "title": "Mở đầu: Lời mở đầu vụng về",
+            "orderIndex": 2,
+            "wordCount": 10014,
+            "createdAt": "16/05/2023",
+            "content": "――Khi khói bụi tan đi, Ram nếm trải cảm giác bất lực hiếm khi nào có.\n\n「――――」\n\nMở to đôi mắt màu hồng nhạt, cô căng mắt nhìn vào không gian vẫn còn mịt mù khói bụi.\n\nTuy nhiên, dù có tìm kiếm trong khoảng không trống rỗng ấy, cô cũng chẳng thấy bất cứ thứ gì mình mong đợi.\n\nNhững vật chuyển động, hay một bóng đen và sắc xanh dễ thương, cô tìm kiếm những thứ đó trong không gian đã bị thủng một lỗ lớn, nhưng hoàn toàn bặt vô âm tín――,\n\n「――Ram!」\n\nKhi Ram định bước lên, ai đó đã nắm lấy vai cô từ phía sau, kéo ý thức cô trở lại. Nhìn xuống, cô thấy mình suýt chút nữa đã đạp vào chỗ sàn nhà nứt toác; nếu không được giữ lại, có lẽ cô đã rơi xuống dưới rồi.\n\nTheo đúng nghĩa đen, đến chỗ đặt chân cũng không nhìn thấy, thật là sự vụng về đáng trách.\n\n「Ram, chị bình an là tốt rồi…… Cả Patrasche-chan nữa, vẫn ổn chứ?」\n\n「Emilia-sama……」\n\nRam cắn môi. Người vừa nắm lấy vai cô chính là Emilia, người lẽ ra đang ở tầng trên.\n\nEmilia khẽ thở dốc. Cô đang kiểm tra sự an toàn của Ram, và cả tình trạng của con địa long màu đen, Patrasche, đang nằm rạp phía sau.\n\nNhìn dáng vẻ đó, cuối cùng Ram cũng lấy lại đủ bình tĩnh để tiếp nhận tình hình xung quanh.\n\nTầng bốn của Tháp Canh Pleiades đang trong tình trạng thảm hại.\n\nTòa tháp bằng đá vốn kiên cố giờ đây lối đi đã sụp đổ, cả trần lẫn sàn nhà đều bị đập nát tơi bời. Qua bức tường thủng lỗ chỗ, có thể thấy bầu trời và cát của Biển Cát, gió khô khốc cứ thế thổi thốc vào.\n\nNhưng, nơi chịu thiệt hại nặng nề nhất lại chính là căn phòng mà Ram và Patrasche đã ở cho đến ngay trước đó――căn phòng thường được gọi là 『Phòng Xanh』.\n\n「――――」\n\nCăn phòng từng phủ đầy cỏ và dây leo từ tường, sàn cho đến trần nhà, giờ đây, sự xâm lấn của thiên nhiên qua bao năm tháng đã bị nhổ tận gốc, không còn giữ được hình dáng ban đầu.\n\nNhững chiếc giường đan bằng cỏ, hay thứ ánh sáng nhạt dịu nhẹ tỏa ra từ sự hiện diện của tinh linh, tất cả mọi thứ.\n\nVà, vấn đề quan trọng nhất là――,\n\n「Ram…… Subaru và Rem đâu rồi? Họ vẫn bình an, đúng không?」\n\nTừ bên cạnh Ram, Emilia nhìn vào nơi từng là 『Phòng Xanh』. Ram không thể trả lời ngay câu hỏi của cô ấy.\n\nDù biết rằng chính sự im lặng đau đớn ấy đã là câu trả lời.\n\n△▼△▼△▼△\n\n「――Trước tiên, mình cùng sắp xếp lại xem chuyện gì vừa xảy ra nha. Không thì cũng chẳng nói chuyện đàng hoàng được đâu.」\n\nNói rồi, Anastasia nhìn quanh những người đang tập hợp và nắm quyền điều hành.\n\nTrên cổ vẫn quấn chiếc khăn choàng lông cáo trắng――Echidna, Anastasia vừa dùng ngón tay phủi nhẹ lớp bụi đất bám trên bộ lông, vừa nói:\n\n「Cái bóng đen tấn công tòa tháp lúc nãy ấy mà……」\n\n「Dù chỉ là tạm thời, nhưng nó đã biến mất rồi. Chắc là nhờ sức mạnh của 『Thần Long』 Volcanica.」\n\n「Cả cái bóng lẫn hành động của Rồng, cái nào cũng đột ngột làm người ta hết hồn à.」\n\nKhi những người còn bình an trong tháp bắt đầu chia sẻ về sự việc đã xảy ra, Julius và Echidna cũng tiếp lời Anastasia.\n\nGiống như Anastasia và Echidna, bộ kỵ sĩ phục màu trắng của Julius cũng lấm lem bụi đất, nhưng lý do không chỉ vì trận chiến ác liệt tại tháp, mà còn do ảnh hưởng lớn từ sự việc vừa rồi.\n\nChỉ có điều, cả ba người đều không bị thương thêm, đó có thể coi là điểm cứu rỗi duy nhất.\n\nĐó cũng là nhờ công lao của 『Thần Long』 Volcanica đang ở tầng cao nhất của tháp.\n\n「Volcanica đã dùng hơi thở quét sạch cái bóng đang tràn tới đó sao. Nếu không có đòn đó, thì Betty và mọi người cũng không xong đâu, ta đoán vậy.」\n\nBeatrice khoanh đôi tay ngắn cũn lại, Anastasia cũng gật đầu trước phát ngôn của cô bé.\n\nThú thật, khi Volcanica bất ngờ tung ra hơi thở, Anastasia đã chuẩn bị tinh thần cho cái chết dù đó không phải tính cách của cô. Sự việc diễn ra quá đột ngột đến mức không có cách nào đối phó.\n\nTất nhiên, không thể nói là chỉ với một hơi thở đó mà mọi cảnh giác đã được gỡ bỏ hoàn toàn.\n\n「Phản ứng trước nguy cơ ập đến thật tuyệt vời, nhưng tình trạng của 『Thần Long』 vẫn không mấy khả quan…… Hiện tại ngài ấy có vẻ đang ngoan ngoãn làm theo chỉ thị của Emilia-sama.」\n\n「Nể mặt Julius, tôi sẽ không nói ngài ấy lẩm cẩm đâu…… Nhưng chuyện 『Thần Long』-san đáng sợ thì vẫn y nguyên à. Cơ mà, chuyện đã xảy ra đúng như lời Beatrice-chan nói đó.」\n\n「Phải không.」\n\nChỉ có Volcanica mới có thể ứng phó với tình huống bất ngờ đó. Nếu con rồng của ông ta không thổi bay cái bóng đang ập tới, thì không biết giờ này mọi chuyện đã ra sao.\n\nTuy nhiên, không thể vui mừng trọn vẹn được là vì――,\n\n「Số lượng khủng khiếp quá mà lị. Nhưng mà, tất cả chỗ đó đều nhắm vào mấy anh chị……」\n\n「Meili-chan.」\n\n「――A, xin lỗi nhaaa.」\n\n「――――」\n\nCó lẽ cũng do dao động, Meili đã không lựa lời mà nói, khiến Anastasia phải nhắc nhở. Meili ngoan ngoãn xin lỗi, ánh mắt cô bé hướng về phía Emilia và Ram đang giữ im lặng.\n\nDù là kết quả đã rồi, nhưng những người chịu thiệt hại từ cái bóng đó là hai người thuộc phe Emilia――Subaru và Rem, nên thiệt hại của phe Anastasia coi như bằng không.\n\n「Nói vậy cũng không đúng, vì chúng ta đang đi cùng nhau mà lị.」\n\nLẩm bẩm trong miệng, Anastasia liếc nhìn thái độ của Julius và Echidna.\n\nTrong thời gian cô hoán đổi với Echidna và ngủ sâu trong ý thức, hai người họ đã hành động cùng nhóm Emilia.\n\nEchidna, người đã gắn bó mười năm thì không nói làm gì, nhưng ngay cả Julius, người mà ký ức về anh ta gần như mới tinh, cũng đang dao động rõ rệt.\n\nVề điểm này, việc Beatrice, người lẽ ra có mối quan hệ thân thiết nhất, vẫn theo kịp cuộc trò chuyện này lại khiến Anastasia ngạc nhiên hơn.\n\n「Beatrice-chan vẫn ổn hả? À không, nói vẫn ổn thì không đúng lắm. Nhưng mà, em không hoảng loạn ha.」\n\n「……Betty có hoảng loạn thì Subaru và mọi người cũng đâu quay về được. Bây giờ, hoảng loạn rồi hành động sai lầm ngay từ đầu mới là vấn đề, ta cho là vậy. Chỉ có điều đó là phải tránh thôi.」\n\n「Hành động đầu tiên? Nghĩa là……」\n\n「――Đưa Subaru và Rem trở về. Hành động vì mục đích đó, đúng không?」\n\nNhíu mày vẻ nghi hoặc, Anastasia định hỏi dồn Beatrice. Người ngắt lời Anastasia chính là Emilia, người đang đỡ vai Ram.\n\nEmilia nhìn thẳng vào cô bằng đôi mắt màu tím biếc. Trước sức mạnh của ánh mắt ấy, Anastasia khẽ mở to mắt, liếm nhẹ môi.\n\n「Gì đây, tưởng cô suy sụp rồi chứ, ánh mắt ngầu ghê ha. Ý cô là sao?」\n\n「Không phải chuyện gì khó hiểu đâu. Subaru và Rem đã bị cái bóng đó nuốt chửng và mang đi mất…… Volcanica đã đuổi nó đi, nhưng vẫn chậm một chút. Nhưng mà……」\n\n「Họ chưa chết đâu. Chắc chắn đấy.」\n\nVẫn được Emilia đỡ vai, Ram mở đôi mắt đang nhắm nghiền ra và đáp lời.\n\nCô buông tiếng thở dài mệt mỏi, khẽ chạm vào trán mình――nơi lẽ ra có chiếc sừng của Quỷ tộc. Đó là căn cứ cho lời khẳng định chắc nịch ấy.\n\n「Của Quỷ tộc…… không phải, là cộng hưởng giác quan của chị em song sinh sao? Nghĩa là cô vẫn kết nối với Rem-san hả?」\n\n「Vâng, đúng vậy. Rem vẫn còn sống. ……Bỏ qua Barusu thì.」\n\n「Subaru cũng không sao hết! Chuyện đó Betty xin đảm bảo!」\n\nTrước phát ngôn đậm chất Ram, Beatrice đỏ mặt hét lên. Nhưng Beatrice là tinh linh đã lập giao ước với Subaru. Lời nói của cô bé cũng có độ tin cậy.\n\nTóm lại, sự sống sót của hai người biến mất đã được xác nhận từ hai góc độ khác nhau.\n\n「Subaru thì có mối liên kết giao ước của Beatrice-sama, còn tiểu thư Rem thì có cộng hưởng giác quan của cô Ram…… Rất đáng để tin tưởng. Hơn nữa, tôi cũng muốn kỳ vọng vào điều đó.」\n\n「Thành thật ghê ha. ……Mà, mình cũng muốn Natsuki-kun và mọi người bình an vô sự.」\n\nThân thiết quá cũng là vấn đề, Anastasia vừa vuốt ve cổ áo vừa phản ứng lại thái độ của Julius.\n\nSuy cho cùng, quan hệ hợp tác với nhóm Emilia chỉ là tạm thời――lập trường đối đầu trong cuộc tuyển chọn Quốc vương vẫn không thay đổi. Cô không muốn hiểu lầm chỗ đó để rồi rước thêm phiền phức.\n\nChỉ là, chính vì quan hệ đối đầu, nên nợ nần phải sòng phẳng.\n\n「Vậy thìii? Em nghĩ chuyện các anh chị ấy còn sống là rất tốt, nhưng màa, hai người họ đã đi đâu rồi nhỉii?」\n\nMeili, người không biết đọc bầu không khí theo một cách tích cực, vừa đùa nghịch với Tiểu Hồng Yết trên đầu vừa hỏi.\n\nTrước câu hỏi đó, Julius mở lời \"Chuyện đó thì\", và nói:\n\n「Tôi không thể giải thích chi tiết, nhưng cái bóng đó là Âm ma pháp…… ít nhất thì nó là vật thể thuộc tính Âm. Có lẽ cùng bản chất với thứ đang phong ấn Roy Alphard trên xe rồng hay 『Phù thủy Đố kỵ』 trong miếu thờ. Nếu vậy thì chuyên gia là……」\n\n「――Là Betty chứ gì. Nhận định của Betty cũng không khác mấy so với Julius đâu. Thứ đó là một khối thuộc tính Âm. Nó cũng gần giống với Shamak có tính định hướng, ta đoán vậy.」\n\n「Shamak? Đó là ma pháp cơ bản của hệ Âm mà? Thứ đó mà có uy lực đến thế sao?」\n\n「……Vì ít người sử dụng nên ta nghĩ có nhiều con người hiểu lầm lắm. Nhưng đến cả tinh linh như ngươi mà cũng nhận thức thế thì gay go đấy.」\n\nBị Beatrice nhìn bằng ánh mắt khinh khỉnh, Echidna trong hình dáng con cáo trắng nhún vai. Thở dài trước phản ứng đó, Beatrice giơ ngón tay lên nói \"Nghe cho kỹ đây\".\n\n「Đặc tính của Shamak nằm ở sự 『Phân tách』. Shamak cấp thấp tách rời thể xác và ý thức, còn cấp cao thì chia cắt không gian với không gian. 『Vượt Cửa』 của Betty là ứng dụng của nó, kết nối phòng này với phòng khác để thực hiện việc gần giống như dịch chuyển tức thời.」\n\n「Là mánh khóe mà Beatrice-sama đã dùng ở dinh thự cũ nhỉ. Việc gọi ngài đến giờ ăn rất vất vả, nên thú thật là tôi đã khá ngán ngẩm đấy.」\n\n「Bây giờ bị nói thẳng thế này làm Betty dao động dữ dội quá. Ta cũng thấy có lỗi, nhưng chuyện xin lỗi để sau…… Tóm lại, Shamak nếu muốn thì có thể dùng nguyên lý chia cắt không gian để chia cắt bất kỳ vật thể cứng rắn nào. Đó là tuyệt kỹ của 『Phù thủy Đố kỵ』 đấy.」\n\n「Giải thích kiểu đó, chẳng phải Natsuki-kun và mọi người bị xé lẻ ra rồi sao?」\n\nNếu cái bóng đó là hung khí cỡ vậy, thì nghe chẳng khác nào nói khả năng sống sót của nhóm Subaru bị nuốt chửng là vô vọng.\n\nTuy nhiên, Beatrice lắc đầu trước thắc mắc của Anastasia:\n\n「Vừa rồi chỉ là ví dụ thôi. Ít nhất thì cái bóng đó không phải thứ dùng để băm vằm Subaru và mọi người. Nhưng mà, nó định nuốt lấy và vận chuyển họ đi đâu đó, ta đoán vậy.」\n\n「Ngăn cách không gian, rồi đưa đi đâu đó…… Trong trường hợp này, là đưa về chỗ của bản thân nó chăng?」\n\n「――Là do chướng khí của Barusu đấy.」\n\nEchidna diễn giải bài giảng của Beatrice, và cuối cùng Ram đưa ra kết luận.\n\nChướng khí bao quanh Subaru――thứ đã khiến lũ ma thú náo loạn trên đường đến Tháp Canh, giờ đây đã là sự thật hiển nhiên giữa các ứng cử viên Quốc vương.\n\nDù nguyên nhân phát sinh hay tính chất chi tiết của loại chướng khí này vẫn hoàn toàn chưa được làm rõ.\n\n「Những gì chúng ta biết là chướng khí thu hút ma thú, và những thứ liên quan đến Giáo phái Phù thủy thường phát ra nó rất mạnh…… chỉ chừng đó thôi.」\n\n「À ừm, Subaru hay bị ma thú đuổi theo thật, nhưng cậu ấy không liên quan gì đến Giáo phái Phù thủy đâu. Tớ biết là rất đáng ngờ, nhưng mà……」\n\n「Không sao không sao, giờ này ai còn nghi ngờ chuyện đó nữa đâu, Emilia-san.」\n\n「Vậy hả? Thế thì tốt quá. Vì Subaru là đứa trẻ ngoan mà……」\n\nEmilia vuốt ngực thở phào, nhưng vấn đề đó lại cắm rễ sâu xa.\n\nĐúng như đã nói, khả năng Subaru liên quan đến Giáo phái Phù thủy không còn tồn tại trong đầu Anastasia nữa. Chỉ là, xuất thân không rõ ràng của Subaru vẫn sinh ra nghi ngờ trong cô.\n\nCô không nghĩ Subaru là kẻ có ác ý. Nhưng cũng tồn tại những ác ý vô thức.\n\n――Khả năng bản thân sự tồn tại của Subaru là một quả bom nổ chậm ẩn sau thiện ý cũng có thể xảy ra.\n\n「Chà chà, chuyện đó tính là lo bò trắng răng đi…… Mở bài thế là hiểu rồi. Cái bóng nuốt chửng Natsuki-kun và Rem-san là thứ định đưa hai người họ đi đâu đó. Vấn đề là, đi đâu?」\n\n「Và, kết quả của việc hơi thở Volcanica cản trở nó là gì nữa.」\n\nBeatrice và Ram, hai người có kết nối với Subaru và Rem, chắc hẳn đã đoán được đại khái điểm đến.\n\nNếu chỉ biết là còn sống mà hoàn toàn không biết bị thổi bay đi đâu thì tìm kiếm sẽ rất vất vả. ――Bởi lẽ, không ai ở đây có lựa chọn là không đi tìm cả.\n\n「Làm ơn đi, cả hai người. Subaru và Rem đang ở đâu? Nói cho tớ biết với.」\n\nTrước lời khẩn cầu chân thành của Emilia, Beatrice và Ram nhìn nhau.\n\nSau vài giây im lặng, hai người họ nói:\n\n「――Phía Nam.」\n\n「Ram cũng cảm thấy cùng hướng đó. Không biết rõ vị trí, nhưng khá là xa.」\n\n「Phía Nam? Từ đây mà về phía Nam thì là……」\n\nKhi Beatrice và Ram đồng thanh nói phía Nam, Emilia nhíu đôi mày thanh tú lại. Chắc cô ấy đang cố gắng hình dung bản đồ thế giới trong đầu, nhưng Anastasia đã giơ tay lên thay.\n\nVị trí hiện tại là Cồn cát Augria nằm ở cực Đông của bản đồ thế giới. Từ đây về phía Nam thì có các ứng cử viên là Pictat, một trong năm thành phố lớn, hoặc Flanders, nhưng mà――,\n\n「Nếu chỉ có vậy thì thái độ của hai vị thật khó hiểu.」\n\nCó vẻ cũng cùng suy nghĩ, Julius đã nói thay nỗi lòng của Anastasia.\n\nĐánh giá sự ăn khớp trong tốc độ tư duy này quả không hổ danh là kỵ sĩ của mình, Anastasia nhắm một mắt lại nói \"Đúng vậy ha\", rồi tiếp:\n\n「Dù có chút khoảng cách, nhưng nếu bị tóm ở quanh đó thì có thể nói thiệt hại là tối thiểu rồi. Vậy mà sắc mặt hai người không tốt…… nghĩa là còn xa hơn về phía Nam nữa hả?」\n\n「Xa hơn về phía Nam, chẳng lẽ là……」\n\n「――Phía Nam, tức là sang tận Đế quốc Volachia rồi á hảaa?」\n\nSo với Emilia đang kinh ngạc, sự ngạc nhiên của Meili nhỏ hơn nhiều.\n\nNhưng đó là phản ứng của việc chưa hiểu rõ mức độ nghiêm trọng của sự việc. Nếu đó là sự thật, thì phản ứng của nhóm Beatrice là điều dễ hiểu.\n\nNếu nhóm Subaru đã vượt biên giới――mà lại còn lọt vào Đế quốc phương Nam thì rắc rối to rồi.\n\n「Đế quốc Volachia ở phía Nam và Vương quốc Lugunica đã ký hiệp định đình chiến trong thời gian tuyển chọn Quốc vương…… Chắc là vậy ha, Julius.」\n\n「Vâng. Có thể người không biết, nhưng tôi cũng đã đi cùng trong đợt đàm phán hiệp định. Cùng với Reinhard và Ferris, chúng tôi đã trực tiếp gặp Hoàng đế của Đế quốc.」\n\n「Nghe nói quan hệ với Đế quốc cực kỳ xấu, nhưng nếu vậy thì giờ ổn rồi nhỉ? Dù có đi tìm Subaru và mọi người……」\n\n「――Không, chuyện đó không đơn giản như vậy đâu ạ.」\n\nTrước câu hỏi rụt rè của Emilia, Julius hạ đuôi mày xuống và lắc đầu.\n\nAnh khẽ cụp đôi mắt vàng óng ánh như ngọc trên khuôn mặt tuấn tú, và nói:\n\n「Đế quốc từ vài tháng trước đã tạm thời cấm qua lại với Vương quốc. Với Thánh quốc Gusteko ở phía Bắc cũng có chuyện tương tự liên quan đến cuộc tuyển chọn Quốc vương, và bên đó thì đã được dỡ bỏ rồi, nhưng mà……」\n\n「Của Đế quốc thì vẫn chưa được dỡ bỏ, ý là vậy ha. Vì có chuyến đi đến Tháp Canh nên đó cũng không phải thông tin mới nhất…… nhưng nếu tình hình không thay đổi.」\n\n「Nghĩa là đi cứu Subaru và mọi người sẽ rất khó khăn sao?」\n\n「Rất tiếc là vậy.」\n\nSuy tính đủ đường, nhưng kết luận của Julius chỉ gói gọn trong một từ: vô vọng.\n\nAnastasia cũng đành phải đưa ra kết luận giống Julius. Nếu định nhập cảnh vào Đế quốc Volachia, thì đột phá từ chính diện là bất khả thi.\n\nChỉ còn cách tìm đường chui, nhưng việc đó cũng cần thời gian và mối quan hệ.\n\nKhông có tác dụng ngay lập tức. Nghĩ đến hai người chưa rõ an nguy, chắc Emilia sẽ sốt ruột lắm đây――,\n\n「――Nếu vậy, chúng ta phải hành động thật nhanh thôi. Lấy máu từ Volcanica mang về Pristella…… và giải tên 『Bạo Thực』 đã bắt được về Vương đô nữa, đúng không?」\n\n「Emilia……?」\n\n「Tớ biết mà, Beatrice. Trong lòng tớ đang cực kỳ, cực kỳ nôn nao. Nhưng mà, dù có cuống cuồng ở đây thì cũng không cứu được Subaru và mọi người. ……Phải bình tĩnh lại đã.」\n\nTuy nhiên, phán đoán bình tĩnh của Emilia, người được cho là sẽ hoảng loạn, lại khiến Anastasia ngạc nhiên hơn. Beatrice cũng có cùng sự ngạc nhiên, nhưng Emilia vẫn kiên cường gật đầu với cô bé.\n\nĐôi mắt ấy dao động, giọng nói khẽ run, nhưng cô ấy đang cố gắng tự kiềm chế.\n\nNhư thể muốn nói rằng để đưa nhóm Subaru trở về, cô sẽ không khoanh tay đứng nhìn dù chỉ một giây.\n\n「Hai người, Subaru và Rem chắc chắn đang ở cùng nhau đúng không?」\n\n「……Sau khi đối chiếu với Beatrice-sama, thì có lẽ là vậy.」\n\n「Vậy sao. ……Thế thì, Subaru chắc chắn sẽ làm bất cứ điều gì liều lĩnh để bảo vệ Rem. Nên không cần lo cho Rem đâu. Subaru thì, tớ hơi sợ một chút.」\n\nSự tin tưởng dành cho Subaru rất dày, nhưng Anastasia cũng đồng tình với nỗi lo lắng tương đương ấy.\n\nKết quả của việc bị bỏ mặc là cậu ta đã mất trí nhớ một lần tại tháp này, đó chính là Natsuki Subaru. Cậu thiếu niên có xu hướng tự trừng phạt bản thân ấy có thói quen xấu là coi nhẹ bản thân để bảo vệ người quan trọng.\n\nĐiều đó đôi khi tiếp thêm dũng khí cho người khác, nhưng cũng là yếu tố gây bất an tương đương.\n\n「Dù sao thì, cũng chỉ còn cách kỳ vọng vào sự nhanh trí của Natsuki-kun thôi ha. Đúng như Emilia-san nói, những gì chúng ta có thể làm không phải là ngồi than vãn trong tháp. Phải hành động thôi.」\n\n「Đã rõ. ……Beatrice-sama, nếu có yếu tố bất an nào thì.」\n\n「……Là cơ thể của Subaru. Cơ thể Subaru có cổng mana bị hỏng, nên không thể tự giải phóng mana được. Nếu để lâu quá, cậu ấy sẽ bị tắc nghẽn mana và phát nổ mất, ta đoán vậy.」\n\n「Ra là vậy. Hoàn cảnh cũng na ná nhau, thấy đồng cảm với Natsuki-kun ghê ha.」\n\nCổng mana của Anastasia có khiếm khuyết bẩm sinh.\n\nViệc không thể hấp thụ mana tốt, ví dụ như đối với một pháp sư thì là khiếm khuyết chí mạng. Tuy nhiên, vì nó không liên quan đến tài kinh doanh và vận may cần thiết cho một thương nhân, nên cũng không gặp rắc rối lớn lắm.\n\n「Ana……」\n\n「Biết rồi biết rồi mà. Vấn đề của mình và Echidna, để sau nói riêng nha. ――Hơn nữa, có vẻ không rảnh để nghỉ ngơi đâu.」\n\nAnastasia vỗ tay, nhóm Emilia cũng gật đầu đáp lại làm hiệu lệnh.\n\nMục đích là tìm kiếm tung tích của Subaru và Rem đã biến mất. Để chuẩn bị đội tìm kiếm cho việc đó, họ phải sớm trở về từ Tháp Canh Pleiades.\n\nThêm vào đó, cũng phải hoàn thành một phần mục đích ban đầu khi đến tháp.\n\n「Bận tối mắt tối mũi luôn ha……」\n\n「Ừm, đúng là vậy thật. Nhưng mà, Subaru và mọi người chắc chắn còn vất vả hơn nhiều.」\n\nNắm chặt nắm đấm, Emilia nghĩ về Subaru đã bị thổi bay đến phương trời xa xăm. Nhìn góc mặt nghiêng đó, Meili với Tiểu Hồng Yết trên đầu nheo mắt lại, nhún vai nói \"Vâng vâng\".\n\nCứ thế, cả nhóm bắt đầu hành động để chuẩn bị――định là vậy, nhưng mà.\n\n「Nhắc mới nhớ nè, chị Ram đã nói chuyện đó chưa dợ?」\n\n「――. Vẫn chưa.」\n\n「――? Chuyện đó?」\n\nTrước câu hỏi bất ngờ của Meili, Ram làm vẻ mặt cay đắng. Trước phản ứng đó của cô, ánh mắt của nhóm Anastasia, những người chưa được nghe gì, đổ dồn về phía Ram.\n\nNhận lấy ánh mắt đó, Ram sau một thoáng chần chừ, nói:\n\n「Emilia-sama, chuyện này vẫn chưa có bằng chứng xác thực nhưng mà…… Có lẽ không chỉ có Barusu và Rem là bị cái bóng nuốt chửng và thổi bay đến Đế quốc đâu.」\n\n「Không chỉ có hai người…… Nhưng mà, Ram và Patrasche-chan, cả Meili cũng đang ở đây, thế này là đủ tất cả những người có mặt trong Phòng Xanh rồi mà?」\n\n「Chuyện là, trước khi cái bóng đó ập đến ào ào, có một cô bé đột nhiên xuất hiện đó nheee. Với lại, anh trai kia còn bảo đó là tên 『Bạo Thực』 thứ ba nữa cơ.」\n\n「『Bạo Thực』, thứ ba á!?」\n\nNghe được câu chuyện không thể bỏ qua, nhóm Anastasia sững sờ.\n\nViệc tra hỏi Ram chi tiết về sự thật đã bị giấu kín đó, và cuộc thảo luận xem có nên điều chỉnh lại các động thái sắp tới hay không trở nên sôi nổi.\n\nTrong không khí hối hả tại Tháp Canh Pleiades, nhìn ra bên ngoài từ cái lỗ lớn của Phòng Xanh đã trống hoác, Emilia đan tay trước ngực như cầu nguyện.\n\n「Làm ơn đi, Subaru. ――Xin hãy bình an vô sự cùng với Rem nhé.」\n\n△▼△▼△▼△\n\n――Tại vùng đất xa xôi ấy, cùng thời điểm lời cầu nguyện của Emilia bị bầu trời khô khốc của Biển Cát nuốt chửng.\n\n「――――」\n\nTrên đồng cỏ được gió vuốt ve, một thiếu niên đang đỡ một thiếu nữ dậy.\n\nThiếu niên tóc đen với ánh mắt sắc bén. Phần lòng trắng lớn trong đôi mắt tam bạch và ánh nhìn ấy khiến cậu lúc nào cũng trông như đang khó chịu, lúc bình thường còn hay bị mô tả là trông như sắp giết người.\n\nTuy nhiên, đuôi mắt của thiếu niên lúc này đang giãn ra dịu dàng, đôi môi khẽ vẽ nên một đường cong nhỏ. Trong đôi mắt tam bạch có dấu hiệu của những giọt nước mắt rưng rưng, thiếu niên đang cố gắng hết sức để tầm nhìn không bị nhòe đi.\n\nBởi vì, đương nhiên rồi.\n\nCậu đã mong chờ khoảnh khắc này biết bao lâu. Nghĩ đến những ngày tháng đau lòng ấy, làm sao cậu có thể rời mắt khỏi thiếu nữ trước mặt dù chỉ một khoảnh khắc.\n\nĐược đỡ dậy trong vòng tay thiếu niên, nhìn nhau ở cự ly gần là một thiếu nữ có mái tóc màu xanh lam rạng rỡ.\n\nChớp đôi mắt to tròn, trên gương mặt đáng yêu có dấu hiệu của ý thức còn mờ nhạt. Dùng từ \"mắt nhắm mắt mở\" có vẻ thích hợp, và cách diễn đạt đó không sai.\n\nThực tế, cô ấy vừa mới tỉnh lại sau giấc ngủ dài đằng đẵng. Đầu óc chưa hoạt động tốt, việc nhận thức hiện thực có chậm một chút cũng là điều đương nhiên.\n\n「……Anh, hùng.」\n\nĐôi môi run rẩy lặp lại như đang nghiền ngẫm lời nói ngay trước đó của thiếu niên.\n\nNhận lấy điều đó, thiếu niên――Natsuki Subaru gật đầu liên tục \"Ừ, ừ\".\n\n「Đúng rồi. Đúng vậy đó, Rem. Anh là anh hùng của em. Anh đã luôn, luôn chờ em……」\n\n「――――」\n\n「Rem?」\n\nCố gắng kìm nén sự run rẩy trong giọng nói, Subaru cố bắt lấy tiếng nói của thiếu nữ――Rem.\n\nCó lẽ do miệng bị khô, lưỡi và môi Rem không phát âm tốt được. Dẫu vậy, cậu vẫn ghé tai vào đôi môi đang cố truyền đạt điều gì đó của cô, cố gắng nghe không sót một từ nào.\n\nChỉ việc Rem cố gắng cử động để truyền đạt điều gì đó thôi cũng khiến cậu vui sướng đến run người.\n\n「――Ư.」\n\n「Gì vậy? Không cần vội đâu. Rem, em muốn nói gì với anh……」\n\nĐịnh nói tiếp là \"đang cố truyền đạt gì vậy\", thì lời nói bị cắt ngang.\n\nNgay khi cậu ghé tai vào miệng Rem, tập trung ý thức để nghe lời cô nói, đầu và cằm của Subaru bị đôi tay vươn ra tóm lấy.\n\nCứ thế, cơ thể Subaru phát ra tiếng \"Oái!?\" lộn ngược, không chỉ giọng nói mà cả người cậu cũng bị lật ngửa ngay tại chỗ.\n\nHơn nữa――,\n\n「……Re, Rem?」\n\nLà do Rem đã đổi tư thế và ngồi đè lên người Subaru.\n\nTrước sự việc đột ngột đó, Subaru trợn tròn mắt, chưa kịp phản ứng. Từ ngay phía trên, Rem nhìn xuống Subaru, đôi mắt xanh của cô kiểm tra toàn thân cậu.\n\nSau đó, cô khẽ thở ra, và nói:\n\n「Rốt cuộc, mục đích của anh là gì. Anh định làm gì tôi hả!」\n\n「――――」\n\n「Anh hùng cái gì chứ, tự nhiên lại…… Với lại, Rem là ai? Trả lời mau!」\n\nĐặt đầu gối lên hai vai Subaru, trong trạng thái phong tỏa cử động của cậu, tay Rem siết lấy cổ Subaru. Bị dồn trọng lượng đè xuống, Subaru rên rỉ đau đớn, chân đạp loạn xạ.\n\nNhưng kỹ thuật khống chế của Rem quá xuất sắc. Cậu hoàn toàn không thể lấy lại tự do.\n\n「Khụ, á, ặc……」\n\n「Nếu không chịu nói, thì tôi sẽ làm cho đến khi anh muốn nói mới thôi. Có kéo dài cũng vô nghĩa thôi. Nào, trả lời đi. Mục đích của anh là……」\n\n「――Kha.」\n\nKhông biết là cố tình hay ngây thơ không nhận ra, lực tay siết cổ của Rem quá mạnh, khiến cậu không có thời gian để trả lời.\n\nThiếu oxy khiến ý thức bắt đầu xa dần, cứ đà này sẽ bị Rem siết cổ đến chết mất, Subaru vẫn cố sức đạp chân loạn xạ.\n\nKhó khăn lắm mới gặp lại, thế mà lại là cuộc tái ngộ một chiều, đã vậy còn kết thúc theo kiểu này, cậu không thể chấp nhận, và không được phép để nó xảy ra.\n\nDù cho giả sử, cô ấy không còn nhớ bất cứ điều gì về Subaru đi chăng nữa.\n\n「Ọc, a……」\n\n「Gì vậy? Nếu có ý định nói, thì hãy thể hiện thành ý tương xứng――」\n\nNgay khi Rem nhíu mày trước dáng vẻ giãy giụa của Subaru.\n\n「A-ư!」\n\n「――Á!?」\n\nBất ngờ, một bóng người lao tới từ bên hông, húc mạnh vào người Rem đang ngồi đè lên Subaru. ――Không, nói là húc bay thì không đúng, chính xác hơn là nó lao vào ôm lấy Rem và lăn lông lốc trên bãi cỏ.\n\nTrọng lượng biến mất, Subaru quay sang ngang ho sù sụ \"Khụ! Khụ!\", tầm nhìn nhòe đi vì lý do khác hẳn với sự cảm động khi tái ngộ, cậu nhìn về phía Rem vừa lăn đi.\n\nVà rồi, ở đó là hình dáng của Rem đang bị quấn lấy, cùng với một thiếu nữ nhỏ nhắn.\n\n「Ư! Ư ư ư!」\n\n「C, cái gì vậy, cô là ai…… Dừng lại đi! Bây giờ không phải lúc……」\n\nThiếu nữ tóc vàng đè lên người Rem đang lăn trên bãi cỏ, nhe răng, mặt đỏ gay gắt gầm gừ, dáng vẻ đó khiến đầu óc Subaru trắng xóa.\n\nNín thở, Subaru bật dậy ngay lập tức và lao về phía Rem cùng thiếu nữ kia.\n\nVà rồi――,\n\n「Mày! Tránh xa Rem ra, cái đồ khốn này!」\n\n「A, ư!!」\n\nGạt phăng bàn tay đang định nắm lấy tóc Rem, Subaru kẹp chặt lấy thiếu nữ――Giám mục Đại tội, Louis Arneb――và lôi cô ta ra khỏi Rem.\n\nCơ thể nhẹ bẫng của tên \"Bạo Thực\" đang vùng vẫy trong vòng tay, nhưng sự phản kháng mà thiếu nữ ấy có thể làm chỉ là đạp chân loạn xạ. Còn lại, nó chỉ biết rên rỉ và vặn vẹo người chứ không hề cố gắng phản công Subaru hơn thế nữa.\n\n\"Auー! Uー, uuuー!\"\n\n\"Chết tiệt, cái quái gì thế này...! Giãy đành đạch... hừ, nằm im coi! Rem, em có sao không!? Có bị thương ở đâu không!?\"\n\n\"K-Không sao ạ. Ngược lại, chính anh mới là người, từ nãy đến giờ cứ...\"\n\nSubaru vừa giữ chặt Louis đang vung vẩy tay chân vừa cất tiếng gọi. Rem đáp lại, đôi mày thanh tú cau lại. Cứ thế, cô vẫn nhìn chằm chằm về phía này đầy cảnh giác, định từ từ đứng dậy khỏi chỗ đó thì——,\n\n\"——Ơ?\"\n\nBịch một tiếng, đầu gối Rem mất hết sức lực, cô ngã bệt xuống đất.\n\nCách cô ngã gục xuống trông thật bất thường, khiến Subaru cũng phải tròn mắt. Thế nhưng, cô gái ấy không nhận ra ánh mắt đó, bối rối đặt tay lên đầu gối và định đứng dậy thêm lần nữa.\n\nTuy nhiên——,\n\n\"......Chân tôi, không nghe lời.\"\n\n\"Không lẽ, em không đứng dậy được sao?\"\n\n\"K-Không, làm gì có chuyện đó... chuyện như thế này, như thế này... ư.\"\n\nĐáp lại giọng nói cứng đờ của Subaru, Rem trả lời nhanh nhảu, cố dồn sức vào đôi chân. Nhưng càng cố gắng bao nhiêu, tình trạng nghiêm trọng lại càng hiện rõ bấy nhiêu.\n\nĐừng nói đến việc đứng vững, dường như ý chí của cô không thể truyền xuống đôi chân được nữa.\n\n\"Do ngủ một thời gian dài nên chân tay bị yếu đi chăng? Không, nhưng sức tay lúc nãy em kéo ngã anh đâu phải của người nằm liệt giường.\"\n\nThường nghe nói nếu nằm viện quá lâu, cơ bắp sẽ bị teo đi do thiếu vận động.\n\nĐó là lý do khiến chân tay yếu ớt và cần phải tập vật lý trị liệu mới có thể đi lại được. Điều này ai cũng biết, nhưng liệu ảnh hưởng đó có chỉ giới hạn ở mỗi phần thân dưới hay không?\n\nKhác với việc vẫn cử động thân trên trong lúc nằm viện, trường hợp của Rem là đã ngủ li bì suốt hơn một năm trời. Nếu yếu đi, lẽ ra phải yếu đều toàn thân mới đúng.\n\nVậy mà, sự bất thường lại xuất hiện trên cơ thể Rem theo một cách kỳ lạ như thế này là——,\n\n\"——Chẳng lẽ là phản phệ từ trận chiến của chị gái sao?\"\n\nCố gắng xác định nguyên nhân gây ra sự biến đổi trên cơ thể Rem, suy nghĩ đó thoáng qua trong tâm trí Subaru.\n\nTrận tử chiến giữa Đại Tội Giám Mục \"Bạo Thực\" và Ram mà cậu đã được nghe kể tại \"Phòng Xanh\". Vì sự bất tài của Subaru mà Ram bị dồn vào đường cùng, cô ấy đã chọn cách chia sẻ gánh nặng với Rem như một con bài tẩy.\n\nKết quả là gánh nặng của Ram - người được cho là mạnh nhất nhì tộc Quỷ - đã chảy sang Rem, và Ram từng than thở rằng không biết sẽ có ảnh hưởng gì xảy ra.\n\nNếu điều đó là sự thật thì——,\n\n\"......Là lỗi của anh.\"\n\nNếu Ram nghe thấy, chắc chắn cô ấy sẽ mắng cậu đừng có tự mãn nữa.\n\nNhưng, nếu vì Subaru không hoàn thành nhiệm vụ mình đã nhận, dẫn đến việc Ram phải làm điều liều lĩnh và ảnh hưởng đó trút lên đầu Rem, thì đó quả thực là trách nhiệm của Subaru.\n\nTrong tình cảnh xung quanh không có đồng đội nào đáng tin cậy, chỉ có Subaru, Rem và Louis - kẻ cứ giữ thái độ kỳ quặc vì mối nhân quả nào đó - thì trách nhiệm ấy càng nặng nề hơn.\n\n\"Lỗi của anh là sao... Anh đã làm gì tôi hả!?\"\n\n\"Không, đó chỉ là cách nói thôi...\"\n\n\"Ngay từ đầu! Anh là ai, còn tôi là ai!?\"\n\n\"――――\"\n\nĐập mạnh vào đôi chân không còn tự do, Rem trừng mắt nhìn Subaru với đôi đồng tử xoáy đầy kích động.\n\nNghe lời kêu than bi thiết như đang nổi cơn tam bành đó của Rem, Subaru nếm trải vị đắng ngắt khi tưởng tượng tồi tệ nhất đã trở thành hiện thực.\n\n——Tôi là ai, Rem đã nói như vậy.\n\nAnh là ai, câu đó còn đỡ. Nhưng câu hỏi bản thân mình là ai, đối với Subaru - người đã mòn mỏi chờ đợi ngày tái ngộ với Rem như thế này - lại là thứ đâm thấu tim gan.\n\nCậu đã có linh cảm từ việc cô ấy tự xưng là \"Tôi\" thay vì \"Rem\".\n\n\"......Giống tình trạng của cô Crusch rồi.\"\n\nRem, người bị cướp đi \"Tên\" và \"Ký ức\", đã phải ngủ say.\n\nNạn nhân của \"Bạo Thực\" còn có hai dạng khác: Julius bị cướp \"Tên\" và bị mọi người lãng quên, và Crusch bị cướp \"Ký ức\" và đánh mất chính mình.\n\nRem tỉnh lại, nhưng tỉnh lại trong trạng thái mất đi \"Ký ức\" về bản thân, một trạng thái mất trí nhớ.\n\nTrong tình huống không hiểu mô tê gì, lại xuất hiện một thiếu niên có ánh mắt hung dữ và một bé gái chỉ biết gầm gừ, cộng thêm đôi chân không cử động được, việc cô hoảng loạn là điều đương nhiên.\n\n\"Oa!\"\n\nCó lẽ đã mệt vì quẫy đạp, Louis - kẻ đã ngoan ngoãn từ lúc nào không hay - bị thả rơi khỏi vòng tay đã mất hết sức lực của Subaru, ngã bịch xuống đất và hét lên.\n\nLouis xoa mông và lăn lóc. Không mảy may để ý đến cô bé, Subaru chậm rãi bước lại gần phía Rem.\n\nNhìn thấy Subaru tiếp cận, Rem nhìn chằm chằm với sự cảnh giác cao độ.\n\nBắt gặp ánh mắt đó, cậu nhớ lại lần đầu tiên bị Rem chĩa mũi dùi thù địch vào người.\n\nVì khoảng cách sau khi đã thân thiết quá gần gũi nên cậu hay quên mất, nhưng vốn dĩ Rem là người hay e ngại người lạ, và là một cô gái rất khó để thu hẹp khoảng cách.\n\nVề điểm đó, Ram - người có thái độ trước và sau khi thân thiết chẳng khác gì nhau - lại dễ chịu hơn nhiều.\n\nTheo một thuyết nào đó, điều đáng sợ là có khả năng họ còn chưa thực sự thân thiết nữa kìa.\n\n\"Chuyện của chị gái cứ để sau đã... này.\"\n\n\"C-Cái gì. Tôi nói trước nhé, nếu anh định làm gì tôi thì...\"\n\n\"——Là Rem.\"\n\n\"Hả?\"\n\nBiểu cảm căng cứng vì lo lắng của Rem chuyển sang ngơ ngác.\n\nDừng bước chân đang tiến lại, Subaru giữ một khoảng cách không thể với tới chỉ bằng một bước chân, và:\n\n\"Là Rem đấy. Đó là tên của em.\"\n\nCậu gọi tên cô một lần nữa.\n\n\"――――\"\n\nĐược nói như thể phủ lên tâm trí một cách nhẹ nhàng, Rem im lặng, không giấu được vẻ bối rối. Tuy nhiên, sâu trong đôi môi, cái lưỡi đỏ hồng khẽ động đậy, cô lặp lại \"Rem\" như để xác nhận.\n\nNhư để làm quen lại rằng đó chính là tên của mình.\n\n\"Thú thật thì anh cũng không rõ chuyện gì đã xảy ra. Chỉ là, chúng ta đã bị lạc khỏi những người đồng đội đi cùng và đang ở một nơi không biết là đâu. Em cũng hiểu là tình hình đang rất nguy cấp đúng không?\"\n\n\"Chuyện đó...\"\n\nVẫn còn đó sự hoang mang, ánh mắt Rem không nhìn Subaru mà quan sát đồng cỏ xung quanh.\n\nĐồng cỏ gió thổi rì rào, mặt trời lên cao, làn da cảm nhận được khí hậu ẩm ướt. Cảm giác này mang hơi ẩm, khác hẳn với không khí khô khốc của Cồn cát Augria.\n\nHương vị cảm nhận trong không khí thay đổi đến mức này chứng tỏ họ đang ở một nơi khác.\n\nTức là——,\n\n\"Không thể trông mong sự cứu viện ngay lập tức được. Chúng ta phải tìm cách hành động để thoát khỏi đây. Vì thế...\"\n\n\"Vì thế thì sao? Anh muốn tôi làm gì? Với một kẻ chân còn không cử động nổi như tôi.\"\n\n\"......Nói thế này chắc em lại nghi ngờ, nhưng chỉ cần em ở đó là được rồi. Chỉ cần em còn thở, còn nói chuyện, còn dùng đôi mắt đó nhìn ngắm xung quanh, chỉ cần thế thôi là đủ.\"\n\n\"——? Ý anh là dùng mắt quan sát xem có nguy hiểm không và báo lại sao?\"\n\n\"Hơi khác một chút. Nhưng mà, như thế cũng được.\"\n\nChỉ cần Rem tỉnh lại, hít thở và nói chuyện với cậu là đủ.\n\nNghe thật chẳng tham vọng chút nào, nhưng điều Subaru cầu nguyện đối với Rem vừa tỉnh lại chỉ đơn thuần là mong cô được bình an, nên đây hoàn toàn là những lời thật lòng không chút toan tính.\n\nTất nhiên, cậu phải giải quyết vấn đề mất \"Ký ức\", và chắc chắn Emilia, Beatrice, Ram cùng những người bị bỏ lại ở tháp đang vô cùng lo lắng cho nhóm Subaru bị lạc.\n\nCậu muốn sớm hội ngộ với họ. ——Muốn cho Rem và Ram gặp lại nhau.\n\nGặp lại Ram, người đã yêu thương đứa em gái không còn ai nhớ đến ấy tha thiết đến nhường nào.\n\n\"Làm ơn, lúc này hãy tin anh được không? Dù có phải đổi bằng mạng sống... không, đổi mạng thì chẳng còn ý nghĩa gì, anh sẽ liều mạng để bảo vệ em. Chắc chắn đấy. Cho nên.\"\n\n\"——. Giả sử, nếu tôi chấp nhận lời đề nghị đó, anh sẽ làm gì?\"\n\n\"Để xem nào. Cũng không thể hành động mà không có kế hoạch, phương sách thì...\"\n\nNhận được câu hỏi thận trọng của Rem, Subaru tìm kiếm thông tin cần thiết để quyết định phương hướng.\n\nXung quanh, như đã nói, nhóm Subaru đang ở trên một đồng cỏ rộng lớn, nhưng có thể thấy những tán cây lớn mọc um tùm bao quanh đồng cỏ ấy.\n\nBốn bề, tầm nhìn bị chặn lại bởi những ngọn cây trước khi chạm đến đường chân trời. Có vẻ như nơi nhóm Subaru đang đứng là một đồng cỏ trống trải nằm giữa rừng.\n\nThú thật, đi vào khu rừng ở một vùng đất không biết là đâu thì chỉ có nguy hiểm, nhưng——,\n\n\"Đầu tiên, nguyên tắc sắt đá khi bị lạc trong rừng là dùng GPS báo vị trí cho đồng đội, cơ mà...\"\n\n\"Gờ-pê-ét...?\"\n\n\"Anh biết. Làm gì có thứ đó. ...Chỉ là, Beako có mối liên kết với anh, nên có khả năng cô bé sẽ xác định được vị trí bằng cách tương tự. Theo một nghĩa nào đó, có thể nói chính sự tồn tại của anh đang đóng vai trò là GPS.\"\n\nTùy trường hợp, cũng có khả năng Ram sẽ xác định được vị trí của Rem nhờ vào cảm giác cộng hưởng. Theo nghĩa đó, cả Subaru và Rem đều đóng vai trò như GPS đối với đồng đội.\n\n\"Tiếp theo là đảm bảo nguồn nước. Dù thiếu gì thì việc kiếm nước cũng là quan trọng nhất. Chúng ta sẽ chọn một nơi làm trại căn cứ, rồi từ đó mở rộng phạm vi tìm kiếm. Cỏ hay trái cây ăn được thì... A, học hỏi từ anh Clind đúng là quyết định sáng suốt. Đa tạ sư phụ...\"\n\nClind, người đã nhồi nhét đủ loại kỹ năng và kiến thức trong quá trình dạy Parkour và sử dụng roi da. Đã bao lần cậu suýt khóc thét trước sự dạy dỗ của vị gia lệnh vạn năng ấy, nhưng nhờ những thứ đó đã thấm vào người mà trong tình huống này cậu vẫn không mất đi phương hướng.\n\nDù sao thì——,\n\n\"Còn nhiều việc khác nữa, nhưng không phải anh định hành động mà không có kế sách gì đâu. Em hiểu cho anh chứ?\"\n\n\"......Cũng hiểu được một mức độ nào đó. Dù có muốn phản kháng thì tôi cũng đang trong tình trạng này mà.\"\n\n\"......Phát ngôn để lộ chút tâm tư thật lòng một cách tinh tế nhỉ.\"\n\nSubaru cười thử để trấn an, nhưng phản ứng của Rem không mấy khả quan.\n\nVới cô gái đã mất \"Ký ức\", chẳng có nền tảng nào để cô tin tưởng Subaru cả. Nếu đôi chân còn tự do, có lẽ cô đã bỏ chạy từ lâu rồi.\n\nDù cậu không muốn coi nỗi bất hạnh xảy đến với cô là điều may mắn.\n\n\"Chân em, mong là sẽ sớm cử động lại được.\"\n\n\"——Ư, anh nói thế thì tôi cũng chịu. Giờ làm sao đây?\"\n\n\"Anh nói rồi đấy. Trước mắt, dự định là đi tìm nước. Chân em đang như thế, nếu được thì mong em đừng chống cự...\"\n\nNói rồi, Subaru thu hẹp khoảng cách cuối cùng với Rem, ngồi xổm xuống và quay lưng lại.\n\nNhìn tư thế đó, chắc Rem cũng hiểu Subaru định làm gì.\n\n\"Anh định cõng tôi đi sao?\"\n\n\"Thật ra cũng có lựa chọn bế kiểu công chúa, nhưng kiểu đó thì không đi được lâu. Cá nhân anh thì, nếu em cho anh cõng sẽ giúp anh nhiều lắm, được không?\"\n\n\"――――\"\n\nRem im lặng một lúc, nhìn chằm chằm vào khuôn mặt thảm hại của Subaru. Sau đó, cô khẽ thở dài rồi rụt rè đưa tay về phía lưng Subaru.\n\nĐôi cánh tay mảnh khảnh của Rem vòng qua vai, đan vào nhau trước ngực cậu. Cảm nhận được sức nặng mềm mại trên lưng, Subaru từ từ đứng dậy, cố gắng không làm rung lắc cô gái đang bám lấy mình.\n\nCảm nhận được sức nặng của Rem. Chỉ là, điều cậu nghĩ khi cõng cô là cô thật nhẹ.\n\nTrong một năm qua, đã bao lần cậu có cơ hội di chuyển Rem khi cô vẫn đang ngủ, lần nào cậu cũng cảm nhận được sự khó khăn khi vận chuyển một người không có ý thức.\n\nĐiều đó, cậu không cảm thấy ở Rem đang chủ động bám lấy mình như thế này.\n\n\"——? Có chuyện gì sao?\"\n\n\"Không, chỉ là có chút cảm xúc kỳ lạ thôi. Vậy thì, đi tìm nước nào.\"\n\n\"Trước đó... con bé kia thì tính sao?\"\n\n\"......À.\"\n\nRem hất cằm qua vai. Nhìn theo hướng cô chỉ, Subaru nhớ ra vấn đề.\n\nTrên đồng cỏ, đang lăn lộn vừa xoa cái mông bị đau là Louis, người đang bị vướng vào mái tóc vàng dài của chính mình. ——Nên làm gì với tên Đại Tội Giám Mục có biểu hiện bất thường này đây.\n\n\"――――\"\n\nNgay cả Subaru cũng nhận ra trạng thái hiện tại của Louis là không tự nhiên.\n\nVốn dĩ, đối phương là kẻ có cấu trúc tinh thần không thể gọi là bình thường, nhưng đó là theo nghĩa độc ác chứ không phải kiểu thoắt ẩn thoắt hiện mặt ấu trĩ như thế này.\n\nNgược lại, so với tuổi tác thì ả có trí tuệ, và cũng có dư địa để vận hành những suy nghĩ ma quỷ kiểu như liếm láp vết thương lòng của đối phương một cách tùy thích.\n\nThế nhưng, bộ dạng hiện tại của ả thì sao.\n\n\"Aー, aーuー.\"\n\nVừa tỉnh dậy đã liếm mặt Subaru, rồi gầm gừ như một đứa trẻ không biết nói, lại còn nổi cơn tam bành như em bé.\n\nChắc chắn đã có điều gì đó không thể lường được xảy ra với tinh thần của Louis.\n\nTuy nhiên——,\n\n\"Điều đó có trở thành lý do để anh đồng cảm với nó không?\"\n\nLà cái ác không thể dung thứ. Sự thật đó tuyệt đối không lay chuyển.\n\nVào khoảnh khắc cuối cùng, Louis đối mặt tại \"Hành lang Ký ức\" đã bị sốc tinh thần khi trải nghiệm \"Chết Trở Về\", đến mức sợ hãi không chỉ Subaru mà cả thế giới này.\n\nTại thời điểm đó, ả đã trở thành một thiếu nữ đáng thương rồi.\n\nNhưng, Subaru đã không cứu ả. Cũng không hề có ý định muốn cứu.\n\nDù có nhiều lựa chọn, nhưng Đại Tội Giám Mục là kẻ luôn chọn những điều trái với nhân đạo, và cuối cùng đánh mất cơ hội sửa sai, tự cắt đứt đường lui của chính mình.\n\nHai người anh của ả, và cả chính ả cũng không phải ngoại lệ.\n\nPhạm phải cái ác không thể dung thứ, Louis Arneb đã biến thành loài súc sinh xứng đáng rơi xuống địa ngục.\n\n——Một kẻ như thế, tại sao Subaru phải cứu chứ.\n\n\"Anh không cứu con bé sao?\"\n\n\"......Phức tạp lắm. Anh và nó tuy ở cùng một chỗ nhưng không phải là đồng đội. Ngược lại, lập trường hoàn toàn đối nghịch với đồng đội. Dù có bỏ mặc, lương tâm anh cũng không cắn rứt.\"\n\n\"――――\"\n\nPhía sau, Subaru biết Rem trên lưng đang nín thở, đó là phản ứng không thể tránh khỏi.\n\nVới Rem không biết sự tình, Louis chỉ trông như một bé gái ngây thơ, yếu ớt đúng như vẻ bề ngoài. Dù thực chất đó là một trong những kẻ báng bổ đã đùa giỡn với mạng sống của bao người.\n\nVì thế, lựa chọn của Subaru chỉ có một.\n\n\"Anh sẽ để nó lại. ...Đừng nói là gánh nặng, anh không thể dẫn theo một mối nguy hiểm được.\"\n\nTrong tháp, việc nhặt Louis lên từ cái bóng đen ập đến là một sai lầm trong phán đoán lúc khẩn cấp. Hoặc giả nếu bỏ mặc Louis, có khả năng Subaru và Rem đã không ra nông nỗi này.\n\nĐúng là trăm hại mà không có lấy một lợi.\n\n\"Vậy sao.\"\n\n\"Ừ, đúng vậy. Ngay cả anh cũng không thể nói là thức dậy trong tình trạng tốt...\"\n\nƯu tiên tối thượng là Rem và bản thân Subaru. Không được nhầm lẫn điều đó.\n\nVới ý định đó, Subaru phớt lờ Louis đang nằm sóng soài, đi về phía khu rừng ngược hướng với cô ta——,\n\n\"——Quả nhiên, dù có mơ hồ, nhưng tin vào bản thân mình là chính xác.\"\n\nĐó là một giọng nói lạnh lùng và khô khốc đến đáng sợ.\n\nNgay sát bên, giọng nói thì thầm ngay bên tai khiến Subaru thốt lên \"Hả\" và thở hắt ra. Nhưng, không cho phép phản ứng gì hơn, một cánh tay mảnh khảnh siết chặt lấy cổ Subaru.\n\n——Rem đang được cõng trên lưng, lại đang siết cổ Subaru từ phía sau.\n\n\"——Gư.\"\n\n\"Dùng những lời êm tai để dụ dỗ tôi, kết cục lại bỏ mặc một bé gái. Một kẻ như thế, làm sao bảo tôi tin là tin được chứ. Đừng có đùa với tôi.\"\n\nSức lực của cánh tay vòng qua cổ, khác với đôi chân tàn phế, chính là sức mạnh của tộc Quỷ.\n\nKhông thể gỡ ra, đường hô hấp của Subaru hoàn toàn bị chặn lại. Cứ thế cậu ngửa người ra sau, dù không cố ý nhưng cậu ngã ngửa xuống đồng cỏ.\n\nTuy nhiên, dù đè lên người Subaru, Rem vẫn không buông tay. Vì bị ôm từ sau lưng, cậu không thể vung tay để hất cô ra được.\n\nTại sao, câu hỏi lấp đầy tâm trí.\n\nTại sao với chả không tại sao. Đúng như Rem đã nói. Trước mặt cô gái không biết gì, không hiểu gì, Subaru đã quá vội vàng vì nôn nóng.\n\nVà giờ cậu đang phải trả giá——,\n\n\"Tỏa ra cái mùi tà ác nồng nặc như thế mà bảo không toan tính gì thì đúng là trơ trẽn!\"\n\n\"――――\"\n\nNghe thấy cụm từ \"mùi tà ác\", Subaru sực nhớ ra.\n\nHồi mới gặp Rem, lý do lớn nhất khiến cô nghi ngờ và coi Subaru là mối nguy hiểm, tuyệt đối không phải do ấn tượng xấu ban đầu hay ánh mắt bẩm sinh của cậu.\n\n——Dư hương của Phù thủy.\n\nRem dù mất \"Ký ức\", không còn gì ngoài bản thân, vẫn cảm nhận được điều đó không thay đổi.\n\nĐó là nguyên nhân lớn nhất khiến Rem nghi ngờ.\n\nNhớ ra điều đó, nhận ra điều đó thì đã quá muộn——,\n\n\"——A.\"\n\nCậu cố sức vặn mình, định thanh minh nhưng không thể.\n\nCứ thế, ý thức của Subaru từ từ, từ từ rơi xuống vực thẳm đen ngầu.\n\nCậu gào thét trong tuyệt vọng rằng mình không muốn bị Rem giết chết như thế này.\n\nTiếng kêu không thể thành lời.\n\n△▼△▼△▼△\n\n\"——Hộc, Rem!?\"\n\nSự thức tỉnh bất ngờ khiến Subaru bật dậy như lò xo.\n\nNgay lập tức, cơn đau họng ập đến khiến cậu ho sặc sụa. Vừa nhổ ra đờm dãi vướng trong cổ, Subaru vừa cố gắng ngồi dậy, nhìn quanh.\n\nNơi này là đồng cỏ, Subaru đang trong trạng thái bị ném ra đất.\n\nTrạng thái thức tỉnh quen thuộc, nhưng cậu biết ngay đó không phải là cảm giác \"đã từng thấy\" do \"Chết Trở Về\" mang lại.\n\n——Bởi vì xung quanh không thấy bóng dáng Rem hay Louis đâu cả.\n\n\"Đây là... chắc chắn là nơi mình bị dịch chuyển đến. Mình...\"\n\nNhớ lại chuyện ngay trước đó, vừa chạm tay lên cổ, cơn đau đã khơi dậy ký ức tồi tệ.\n\nBị Rem trên lưng siết cổ và cứ thế bị tước đoạt mạng sống. ——Không, không phải vậy.\n\n\"Cổ đau quá... nghĩa là Rem đã không giết mình.\"\n\nBị siết đến ngất đi nhưng cô ấy đã không ra tay sát hại.\n\nVừa ngạc nhiên trước quyết định của Rem với giọng nói lạnh lùng ấy, Subaru vừa thở phào nhẹ nhõm, rồi ngay lập tức tự răn mình rằng không phải lúc để an tâm.\n\nChưa chết. Tức là thế giới vẫn tiếp diễn từ diễn biến tồi tệ nhất ban nãy.\n\nRem nghi ngờ nhân tính của cậu do dư hương Phù thủy và bỏ đi với ấn tượng tồi tệ nhất. ——Việc hai người họ không có ở đây, chắc là vì muốn chạy trốn khỏi Subaru.\n\nCuối cùng, Rem đã ghê tởm quyết định bỏ lại Louis của Subaru.\n\nVứt bỏ một đứa trẻ nhỏ trên đồng cỏ lạ lẫm, hẳn cậu trông như một gã đàn ông tàn nhẫn thực sự.\n\n\"Đó là hiểu lầm thôi, dù có nói thế chắc em ấy cũng chẳng tin đâu nhưng mà...!\"\n\nVừa hối hận về chuỗi phán đoán sai lầm của mình, Subaru vừa tự tát vào má, đứng dậy.\n\nNhìn lên bầu trời, dựa vào độ nghiêng của mặt trời thì chưa trôi qua bao lâu. Đây cũng là điều may mắn dù không muốn nói thế, nhưng chân Rem đang không cử động được.\n\nVới đôi chân đó thì không thể chạy xa được. Bằng chứng là——,\n\n\"Có vết kéo lê trên cỏ...! Thế này thì đuổi theo được!\"\n\nNếu không có manh mối mà phải đuổi theo hai người đã chạy vào khu rừng rộng lớn bốn bề kia, thì đó sẽ là trò đuổi bắt với độ khó không thể chinh phục.\n\nNhưng nếu lần theo dấu vết trên cỏ, sẽ biết họ đi vào rừng từ chỗ nào. Từ đó có truy dấu tiếp được hay không là một canh bạc, nhưng:\n\n\"Nếu là canh bạc nắm phần thua thì tao chơi chán chê rồi!\"\n\nHét lên một điều chẳng đáng tự hào gì, Subaru lao đi theo dấu vết trên cỏ. Với đôi chân của Subaru, cậu nhanh chóng xác định được vị trí hai người họ tiến vào rừng.\n\nKhu rừng rậm rạp cây cối ấy, trong ấn tượng của Subaru, mang lại bầu không khí giống như rừng mưa nhiệt đới.\n\nTrong thoáng chốc, kiến thức trên tivi về việc rừng rậm Amazon chẳng khác nào tử địa đối với con người hiện lên, nhưng——,\n\n\"Nếu Rem đã vào nơi như thế thì càng không thể bỏ qua được.\"\n\nCả Subaru và Rem đều ở đây trong tình trạng hoàn toàn không chuẩn bị gì để vào rừng.\n\nNghĩ đến việc Rem đang liều mạng chạy trốn trong rừng với đôi chân tàn phế, cậu không thể không nguyền rủa từng quyết định nông nổi của mình, rằng mình đã làm cái trò ngu ngốc gì thế này.\n\n\"——Rem! Ra đây đi! Làm ơn! Anh sai rồi!\"\n\nTrong rừng, vừa bước đi trên nền đất mềm và những bụi cỏ lớn, Subaru vừa lớn tiếng gọi. Tất nhiên, tiếng gọi này có khả năng sẽ khiến nhóm Rem thêm bất an và lẩn trốn xa hơn.\n\nDù vậy, còn đỡ hơn là lang thang trong rừng mà không có manh mối, không có chỗ dựa nào.\n\nHơn hết, nếu không liên tục hành động để cảm thấy mình đang làm gì đó tìm Rem, thì lồng ngực cậu như muốn vỡ tung vì cảm giác tội lỗi và sự căm ghét bản thân.\n\nBiết bao người đã dốc sức vì Rem như thế, nếu cô ấy xảy ra chuyện gì, rốt cuộc Subaru biết tạ lỗi thế nào đây.\n\nNgay cả việc lấy cái chết để tạ tội, cậu cũng đâu có làm được.\n\n\"Rem——! Em ở đâu! Trả lời anh đi! Làm ơn, đừng rời khỏi anh!!\"\n\nMặc kệ giọng nói khản đặc, cậu gào lên giữa khu rừng rậm bị cây cối che khuất.\n\nCứ thế lê bước trong rừng, tay chân nặng trĩu, cảm giác mệt mỏi là vô cùng tận. Nhớ lại thì, cơ thể Subaru vừa trải qua trận kích chiến ở Tháp Canh Pleiades, chỉ mới ngủ được vài tiếng đồng hồ.\n\nDù có sự chữa lành từ tinh linh của \"Phòng Xanh\" giúp tăng khả năng hồi phục, cũng chỉ như muối bỏ bể.\n\nNếu không cẩn thận, ngay khi tìm thấy Rem, cậu có thể sẽ ngã gục vì an tâm mất.\n\nVừa cảnh giác với khả năng ngu ngốc đó, Subaru vừa lang thang trong rừng——,\n\n\"Rem——! Trả lời anh điー! Cầu xin em, là lỗi của anh!\"\n\nSubaru đưa tay lên miệng, tiếp tục hét lớn.\n\nĐó là lời kêu gọi từ tận đáy lòng, nhưng không có hồi đáp từ cô ấy, trái tim Subaru ngày càng mòn mỏi.\n\nCứ thế, cậu đuổi theo bóng dáng Rem đã biến mất, căng mắt nhìn vào những hàng cây trong rừng——,\n\n\"――――\"\n\nNgay khi cậu mở to miệng định gọi tên Rem lần nữa, khóe mắt cậu bắt được thứ gì đó.\n\nĐó là một sự thay đổi nhỏ nhoi lấp ló sau khe hở của những tán cây, những chiếc lá rậm rạp. Cậu thấy nó chuyển động khác với ngọn cỏ đang lay động trong gió——,\n\n\"Re——\"\n\nKhoảnh khắc cậu quay mặt về phía đó với niềm hy vọng.\n\n——Một xung lực lao tới với tốc độ kinh hoàng đã đâm thẳng vào ngực Subaru.\n\n\"——Hả!?\"\n\nKhông kịp hét lên tiếng nào, xung lực khiến chân cậu nhấc bổng, cơ thể Subaru bay ngược về phía sau. Cứ thế, lưng cậu đập mạnh vào thân cây với một lực dữ dội, hơi thở tắc nghẹn.\n\n\"Hộc... cái, gì... chứ...!?\"\n\nNgay trước mặt, đòn tấn công từ khe hở của những hàng cây khiến suy nghĩ cậu hỗn loạn, mắt hoa lên.\n\nNhưng, nghĩ đến xung lực vừa nhận, cậu biết ngay đó là một đòn tấn công. Vì thế, nhanh hơn cả khi suy nghĩ kịp định hình, Subaru định nhảy tránh khỏi chỗ đó theo phản xạ.\n\nTuy nhiên, cậu không thể nhảy đi đâu được. Bởi vì——,\n\n\"——A?\"\n\nBởi vì mũi tên to tướng xuyên qua ngực Subaru đã xuyên thủng qua lưng và ghim chặt Subaru vào thân cây đại thụ phía sau.\n\n\"Ọc, hự... ư.\"\n\nNgay khi ý thức được điều đó, máu trào ra ồ ạt từ cổ họng.\n\nỌc ọc, máu tuôn ra xối xả từ nội tạng bị xuyên thủng, bị rách nát và đủ thứ khác, không sao cầm lại được. Ọc ọc, thay vì hít thở, Subaru nôn ra máu và lại đau đớn vì khó thở.\n\nTrong cơn đau đớn, cậu nắm lấy mũi tên trên ngực, định rút ra.\n\nKhông nhúc nhích. Mũi tên cắm phập vào cây cùng với Subaru một cách chắc chắn, phong ấn mọi cử động.\n\nCái gì thế này, mũi tên này.\n\nMột đòn tấn công bằng mũi tên to và mạnh đến mức phi thường, không thể nào chống đỡ. Quả đúng là cường cung, cơ thể bị xuyên thủng bị ghim lại như tiêu bản côn trùng, chỉ biết giãy giụa một cách xấu xí——.\n\n\"A, ư, e, mư... ư.\"\n\nTừ khe hở của dòng máu trào ra, cậu vẫn gọi tên cô gái lẽ ra đang ở trong rừng. Tiếng gọi không thành lời chứa đựng lời cảnh báo về mối đe dọa đang ẩn nấp trong rừng.\n\nKẻ nào đó ẩn trong rừng đã dùng cung và tên, nhắm vào đây.\n\nVà rồi, Subaru thảm hại, không thể đến được chỗ Rem, cứ thế này, không làm được gì cả——,\n\n\"——Mư.\"\n\nRốt cuộc, chuyện gì đang xảy ra. Đây là đâu, phải làm sao bây giờ.\n\nCơn nóng trào dâng và cơn đau được nhận thức quá muộn lan ra toàn thân. Máu chảy ra từ mắt, từ mũi, từ tai của Subaru.\n\nNếm trải cảm giác bản thân đang mất đi, trở nên trống rỗng, cảm nhận \"Cái Chết\" lạnh lẽo đang đến gần, Subaru cố hết sức mở to mắt, rung động cổ họng, gọi tên cô ấy đến giây phút cuối cùng.\n\n——Gọi tên em đến giây phút cuối cùng.\n\nỌc ọc, ọc ọc, trong khi đầm đìa máu.\n\nĐến tận giây phút cuối cùng, cậu vẫn gọi, gọi, gọi mãi tên em.\n\nGọi mãi——,",
+            "hasIllustration": false,
+            "images": [],
+            "updatedAt": "Vừa xong"
+          },
+          {
+            "id": 1003,
+            "volumeId": 101,
+            "chapterNumber": 1,
+            "title": "Chương 01: Dạy một bài học từ nụ hôn đầu (Phần 1)",
+            "orderIndex": 3,
+            "wordCount": 4890,
+            "createdAt": "16/05/2023",
+            "hasIllustration": true,
+            "images": [
+              {
+                "id": 1,
+                "chapterId": 1003,
+                "imageUrl": "https://i.pinimg.com/1200x/c1/40/b9/c140b9d0000c0ea81890ff72efd3164c.jpg",
+                "orderIndex": 1,
+                "createdAt": "16/05/2023"
+              },
+              {
+                "id": 2,
+                "chapterId": 1003,
+                "imageUrl": "https://i.pinimg.com/1200x/71/db/a1/71dba1cfda91db7afce6f693e389c7c4.jpg",
+                "orderIndex": 2,
+                "createdAt": "16/05/2023"
+              }
+            ],
+            "content": "Buổi chiều hôm ấy, câu lạc bộ Văn học không có ai ngoài hai chúng tôi.\n\nTiếng ve kêu râm ran bên ngoài sân trường báo hiệu mùa hè đang đến rất gần. Trong căn phòng học cũ kỹ ở góc tầng ba, quạt trần quay kẽo kẹt từng hồi nhịp nhàng.\n\n\"Này Ibuki, cậu đã đọc cuốn tiểu thuyết lãng mạn tớ đưa tuần trước chưa?\"\n\nAiri ngồi vắt vẻo trên bục cửa sổ, hai chân đung đưa trong không trung. Làn váy đồng phục bay nhẹ theo từng cơn gió thoảng.\n\n\"Đọc rồi. Nhưng mà... cái đoạn nam chính đột ngột hôn nữ chính ở chương ba vô lý hết sức. Ngoài đời thực làm gì có ai làm thế.\"\n\n\"Hể~? Vô lý chỗ nào chứ? Người ta gọi đó là sự lãng mạn bất ngờ đấy, đồ khô khan!\"\n\nAiri nhảy xuống khỏi bục cửa sổ, bước từng bước nhẹ nhàng về phía bàn tôi. Cô nàng cúi người xuống, khuôn mặt xinh đẹp bất ngờ áp sát đến mức tôi có thể cảm nhận rõ ràng hơi thở ấm áp phả vào gò má.\n\n\"Hay là... Ibuki của chúng ta chưa từng có kinh nghiệm nên mới thấy nó vô lý nhỉ?\"\n\n\"C-Cậu nói nhảm gì đấy...\"\n\n\"Fufufu~ Quả nhiên là thế rồi! Cậu chẳng thể hôn được đâu ha? Đứng trước một cô gái dễ thương như tớ mà tim cậu đang đập thình thịch như trống trận kìa!\"\n\nKhoảng cách giữa hai khuôn mặt lúc này chưa đầy mười centimet. Đôi môi hồng hào của Airi khẽ mấp máy, ánh mắt ngập tràn vẻ đắc thắng và khiêu khích quen thuộc.\n\n*Cậu chẳng thể hôn được đâu ha?*\n\nCâu nói đó như một ngòi nổ kích hoạt sự bồng bột của một thằng con trai mười bảy tuổi. Một sợi dây lí trí nào đó trong đầu tôi đột ngột đứt phựt.\n\n\"...Cậu nghĩ tớ không dám thật à?\"\n\n\"Ơ...?\"\n\nTrước khi Airi kịp nhận ra sự thay đổi trong ánh mắt của tôi, tôi đã đưa tay ra nắm lấy cổ tay mảnh khảnh của cô ấy, kéo nhẹ về phía mình.\n\n*Chụt.*\n\nMột cảm giác mềm mại, ngọt ngào đến ngỡ ngàng chạm vào môi tôi.\n\nCả căn phòng dường như chìm vào khoảng lặng tuyệt đối. Tiếng ve kêu ngoài cửa sổ dường như biến mất, tiếng quạt trần cũng không còn nghe thấy nữa. Chỉ còn lại tiếng đập loạn xạ của hai trái tim đang kề sát nhau.\n\nMắt Airi mở to hết cỡ, đồng tử co thắt lại trong sự bàng hoàng tột độ. Khuôn mặt cô nàng từ ngạc nhiên chuyển dần sang đỏ bừng, lan từ gò má xuống tận mang tai và chiếc cổ trắng nõn.\n\n\"...I-Ibuki... cậu...\"\n\nĐôi môi cô ấy run rẩy, giọng nói lắp bắp hoàn toàn mất đi vẻ tự tin và tinh nghịch thường ngày. Đây là lần đầu tiên sau mười năm làm bạn thuở nhỏ, tôi được nhìn thấy một Kamishiro Airi e thẹn và bối rối đến mức này.\n\n---\n\n*Hết phần 1*"
+          },
+          {
+            "id": 1004,
+            "volumeId": 101,
+            "chapterNumber": 1.5,
+            "title": "Chương 01 (Phần 2): Sự bối rối sau giờ học",
+            "orderIndex": 4,
+            "wordCount": 5120,
+            "createdAt": "19/05/2023",
+            "content": "## Chương 01 (Phần 2): Sự bối rối sau giờ học\n\nNăm giây trôi qua như cả một thế kỷ.\n\nKhi tôi buông tay ra và lùi lại nửa bước, Airi dường như vẫn chưa thể tiếp nhận được những gì vừa xảy ra. Cô ấy dùng cả hai tay ôm lấy má mình, ánh mắt nhìn tôi vừa hoảng hốt, vừa ngập ngừng khó hiểu.\n\n\"...Cậu... vừa làm cái gì thế hả?!\"\n\n\"Thì... tại cậu bảo tớ 'chẳng thể hôn được đâu' mà.\"\n\n\"N-Nhưng tớ chỉ trêu thôi mà! Ai bảo cậu làm thật chứ đồ ngốc! Đồ đại ngốc! Bạo lực! Biến thái!\"\n\nAiri vớ lấy chiếc cặp sách trên bàn, giấu khuôn mặt đang đỏ như gấc chín ra sau rồi quay người chạy vụt ra khỏi phòng học. Tiếng bước chân vội vã vang vọng dọc hành lang vắng ngắt.\n\nTôi đứng trơ trọi giữa căn phòng, đưa ngón tay lên chạm nhẹ vào môi mình.\n\nVẫn còn vương vấn vị ngọt thanh nhẹ như kẹo dâu tây.\n\n\"Chết tiệt... mình vừa làm cái quái gì thế này? Ngày mai biết đối mặt với cô ấy thế nào đây...\"\n\nCả buổi tối hôm đó, tôi không thể nào tập trung làm được bất cứ việc gì. Mỗi lần nhắm mắt lại, khuôn mặt đỏ bừng cùng đôi mắt ngấn nước của Airi lại hiện lên rõ mồn một trong tâm trí."
+          },
+          {
+            "id": 1005,
+            "volumeId": 101,
+            "chapterNumber": 2,
+            "title": "Chương 02: Màn Kabedon khiến tim loạn nhịp (Phần 1)",
+            "orderIndex": 5,
+            "wordCount": 6200,
+            "createdAt": "27/05/2023",
+            "hasIllustration": true,
+            "content": "## Chương 02: Màn Kabedon khiến tim loạn nhịp (Phần 1)\n\nSáng hôm sau, bầu không khí trước cửa nhà trở nên kỳ lạ hơn bao giờ hết.\n\nNhư một thói quen suốt mười năm qua, cứ đúng 7 giờ 15 phút, tôi lại đứng trước cổng nhà Airi để cùng nhau đi bộ đến trường. Nhưng hôm nay, cánh cửa gỗ mở ra chậm hơn thường lệ năm phút.\n\nAiri bước ra, mái tóc vàng óng buộc lệch một bên thay vì xõa vai như mọi ngày. Đôi mắt cô nàng hơi thâm quầng, dường như cũng đã trải qua một đêm mất ngủ giống hệt tôi.\n\n\"...Chào buổi sáng, Ibuki.\"\n\nGiọng cô ấy lí nhí, nhỏ đến mức nếu không chú ý tôi sẽ chẳng thể nghe thấy.\n\n\"Ừ... chào buổi sáng, Airi.\"\n\nSuốt quãng đường dài một cây số từ nhà đến trường, không ai trong chúng tôi nói với nhau thêm câu nào. Nhưng sự im lặng này không hề căng thẳng hay khó chịu, mà lại tràn ngập một cảm giác ngượng ngùng đến mức ngột ngạt.\n\nMãi cho đến giờ nghỉ trưa, khi tôi đang mua bánh mì ở căng tin thì bất ngờ bị một bàn tay nắm chặt lấy cổ tay, kéo xềnh xệch về phía góc cầu thang thoát hiểm ít người qua lại."
+          }
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "id": 1,
+        "user": {
+          "id": "u_kurogane",
+          "username": "Kurogane_Ikki",
+          "avatar": "https://i.pinimg.com/originals/4e/2a/f4/4e2af41014d87c89b468cad0080667ca.gif",
+          "role": "VIP Độc Giả",
+          "rankTitle": "Tông Sư",
+          "isVerified": true
+        },
+        "score": 5,
+        "review": "Truyện cực kỳ cuốn hút! Diễn biến tâm lý nhân vật từ trêu chọc sang ngượng ngùng rồi yêu thương nhau được miêu tả rất tinh tế và tự nhiên. Nhóm dịch làm việc rất có tâm, hành văn trôi chảy và mượt mà.",
+        "createdAt": "20/07/2023",
+        "helpfulCount": 48
+      },
+      {
+        "id": 2,
+        "user": {
+          "id": "u_sakura",
+          "username": "Sakura_Blossom",
+          "avatar": "https://i.pinimg.com/originals/c5/bf/9b/c5bf9b4801ee89b2c9d56924a9357217.gif",
+          "rankTitle": "Đại Hiệp",
+          "isVerified": false
+        },
+        "score": 4.8,
+        "review": "Romcom chuẩn chỉ của năm! Nữ chính Airi tsundere kiểu này đáng yêu xỉu luôn á. Mong nhóm dịch tiếp tục ra chương đều đặn nhé!",
+        "createdAt": "05/08/2023",
+        "helpfulCount": 29
+      }
+    ],
+    "comments": [
+      {
+        "id": 101,
+        "user": {
+          "id": "u_shironeko",
+          "username": "Shironeko_29",
+          "avatar": "https://i.pinimg.com/originals/4e/2a/f4/4e2af41014d87c89b468cad0080667ca.gif",
+          "rankTitle": "Tiên Phong",
+          "isTranslator": false
+        },
+        "chapterTitle": "Chương 01: Dạy một bài học từ nụ hôn đầu (Phần 1)",
+        "content": "Cú hôn bất ngờ chất lượng quá tác giả ơi! Cười đau cả ruột đoạn em gái hoảng loạn chạy mất tích :)))",
+        "createdAt": "2 ngày trước",
+        "likes": 18,
+        "replies": [
+          {
+            "id": 1011,
+            "user": {
+              "id": "u_arteria",
+              "username": "Arteria",
+              "avatar": "https://i.pinimg.com/originals/c5/bf/9b/c5bf9b4801ee89b2c9d56924a9357217.gif",
+              "role": "CHỦ THỚT",
+              "isTranslator": true
+            },
+            "replyToUser": {
+              "id": "u_shironeko",
+              "username": "Shironeko_29"
+            },
+            "content": "Cảm ơn bạn đã ủng hộ! Mấy chương sau còn ngọt xỉu hơn nữa cơ, ráng hóng nhé haha.",
+            "createdAt": "1 ngày trước",
+            "likes": 9
+          }
+        ]
+      }
+    ]
+  }
+}

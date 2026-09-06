@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -21,16 +15,29 @@ export const metadata: Metadata = {
 };
 
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html
-      lang="en"
-      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
+      lang="vi"
+      suppressHydrationWarning
+      className={cn("h-full", "antialiased", "font-sans", inter.variable)}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground transition-colors duration-300">
-        <Navbar />
-        {children}
+      <body
+        suppressHydrationWarning
+        className="min-h-full flex flex-col bg-background text-foreground transition-colors duration-300 font-sans"
+      >
+        <TooltipProvider delay={150}>
+          <Navbar />
+          {children}
+          <Footer />
+        </TooltipProvider>
       </body>
     </html>
   );

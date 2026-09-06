@@ -1,0 +1,5 @@
+export { NovelHeaderInfo } from "./novel-header-info"
+export { NovelReviews } from "./novel-reviews"
+export { NovelVolumesList } from "./novel-volumes-list"
+export { NovelComments } from "./novel-comments"
+export { NovelDetailSkeleton } from "../skeleton/novel-skeleton"

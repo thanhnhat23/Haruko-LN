@@ -23,7 +23,7 @@ interface NovelCardProps {
 // Vertical Card: Borderless premium poster style to prevent squashing in narrow grids
 export function VerticalCard({ novel }: NovelCardProps) {
   return (
-    <Link href="#" className="group flex flex-col gap-2 hover:-translate-y-1 transition-all duration-300">
+    <Link href={`/novel/${novel.id}`} className="group flex flex-col gap-2 hover:-translate-y-1 transition-all duration-300">
       {/* Aspect Ratio 3:4 for vertical covers */}
       <div className="relative w-full aspect-3/4 overflow-hidden rounded-lg border border-border/80 bg-accent/20 shadow-xs group-hover:shadow-md transition-all duration-300">
         <Image
@@ -56,7 +56,7 @@ export function VerticalCard({ novel }: NovelCardProps) {
 
 export function HorizontalCard({ novel }: NovelCardProps) {
   return (
-    <Link href="#" className="group flex bg-card border border-border/80 rounded-xl overflow-hidden shadow-xs hover:shadow-md p-3 gap-4 hover:-translate-y-0.5 hover:border-border/10 transition-all duration-300">
+    <Link href={`/novel/${novel.id}`} className="group flex bg-card border border-border/80 rounded-xl overflow-hidden shadow-xs hover:shadow-md p-3 gap-4 hover:-translate-y-0.5 hover:border-border/10 transition-all duration-300">
       <div className="relative w-20 sm:w-24 aspect-3/4 rounded-lg overflow-hidden bg-accent/30 border border-border/60 shrink-0">
         <Image
           src={novel.image}
@@ -136,7 +136,7 @@ export function RankRow({ novel, rank }: RankRowProps) {
   }
 
   return (
-    <Link href="#" className={`flex items-center gap-3 group ${rowStyle}`}>
+    <Link href={`/novel/${novel.id}`} className={`flex items-center gap-3 group ${rowStyle}`}>
       {/* Rank Indicator */}
       <span className={`w-5 text-center shrink-0 font-extrabold ${rankStyle}`}>
         {String(rank).padStart(2, '0')}
