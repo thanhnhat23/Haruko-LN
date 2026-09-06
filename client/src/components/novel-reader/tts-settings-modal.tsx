@@ -518,7 +518,7 @@ export function TtsSettingsModal({
                     />
                   </div>
 
-                  <div className="max-h-56 overflow-y-auto space-y-2 pr-1 pt-1">
+                  <div className="max-h-56 overflow-y-auto no-scrollbar scrollbar-none [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden space-y-2 pr-1 pt-1">
                     {filteredVietnamese.length > 0 && (
                       <div className="space-y-0.5">
                         <div className="px-2 py-1 text-[10px] font-black uppercase tracking-wider text-emerald-500 flex items-center gap-1.5">

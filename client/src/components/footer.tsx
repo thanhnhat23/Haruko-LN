@@ -6,7 +6,7 @@ import { Mail, Send } from "lucide-react"
 
 export function Footer() {
     return (
-        <footer className="border-t border-border/40 bg-card/45 backdrop-blur-xs py-12 sm:py-16 z-10 text-xs text-muted-foreground transition-colors duration-300">
+        <footer className="border-t border-border/40 bg-card/45 backdrop-blur-xs py-12 sm:py-16 z-1 text-xs text-muted-foreground transition-colors duration-300">
             <div className="w-full max-w-360 mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12">
                 <div className="lg:col-span-4 space-y-4">
                     <Link href="/" className="flex items-center gap-2 group">

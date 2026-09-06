@@ -2,6 +2,7 @@
 
 import React, { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import { cn } from "@/lib/utils"
@@ -53,6 +54,7 @@ export function ChapterMarkdownReader({
           <ReaderSpoilerSpan key={index}>
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
+              urlTransform={(url) => url}
               components={{
                 p: ({ children }) => <span className="inline">{children}</span>,
                 strong: ({ children }) => <strong className="font-bold">{children}</strong>,
@@ -69,6 +71,7 @@ export function ChapterMarkdownReader({
         <ReactMarkdown
           key={index}
           remarkPlugins={[remarkGfm]}
+          urlTransform={(url) => url}
           components={{
             p: ({ children }) => (
               <p className="leading-relaxed font-normal">{children}</p>
@@ -88,7 +91,7 @@ export function ChapterMarkdownReader({
             ),
             blockquote: ({ children }) => (
               <blockquote
-                className="border-l-4 pl-4 py-2 my-4 rounded-r-lg italic"
+                className="border-l-4 pl-4 rounded-r-md italic"
                 style={{
                   borderColor: "var(--reader-border)",
                   backgroundColor: "var(--reader-card)",
@@ -109,6 +112,46 @@ export function ChapterMarkdownReader({
                 {children}
               </Link>
             ),
+            img: ({ src }) => {
+              if (!src) return null
+              const imageSrc = typeof src === "string" ? src : ""
+              const isDataUrl = imageSrc.startsWith("data:") || imageSrc.startsWith("blob:")
+
+              const imageNode = (
+                <Image
+                  src={imageSrc}
+                  alt=""
+                  width={1200}
+                  height={800}
+                  unoptimized
+                  className="max-h-[75vh] w-auto h-auto object-contain mx-auto rounded-xs transition-transform duration-200 group-hover:scale-[1.01]"
+                />
+              )
+
+              return (
+                <span className="block my-3 text-center select-none">
+                  {isDataUrl ? (
+                    <span
+                      className="inline-block group relative rounded-sm overflow-hidden border transition-all shadow-sm"
+                      style={{ borderColor: "var(--reader-border)" }}
+                    >
+                      {imageNode}
+                    </span>
+                  ) : (
+                    <Link
+                      href={imageSrc}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block group relative cursor-zoom-in rounded-sm overflow-hidden border transition-all shadow-sm"
+                      style={{ borderColor: "var(--reader-border)" }}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {imageNode}
+                    </Link>
+                  )}
+                </span>
+              )
+            },
             ul: ({ children }) => (
               <ul className="list-disc list-inside space-y-1.5 my-3 pl-2">
                 {children}

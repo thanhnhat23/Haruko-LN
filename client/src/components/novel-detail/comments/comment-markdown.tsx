@@ -2,6 +2,7 @@
 
 import React, { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import { cn } from "@/lib/utils"
@@ -45,6 +46,7 @@ export function CommentMarkdown({ content, className }: CommentMarkdownProps) {
           <SpoilerSpan key={index}>
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
+              urlTransform={(url) => url}
               components={{
                 p: ({ children }) => <span className="inline">{children}</span>,
                 strong: ({ children }) => <strong className="font-bold">{children}</strong>,
@@ -67,6 +69,7 @@ export function CommentMarkdown({ content, className }: CommentMarkdownProps) {
         <ReactMarkdown
           key={index}
           remarkPlugins={[remarkGfm]}
+          urlTransform={(url) => url}
           components={{
             p: ({ children }) => (
               <span className="leading-relaxed whitespace-pre-line inline my-0.5">
@@ -114,6 +117,42 @@ export function CommentMarkdown({ content, className }: CommentMarkdownProps) {
                 {children}
               </Link>
             ),
+            img: ({ src }) => {
+              if (!src) return null
+              const imageSrc = typeof src === "string" ? src : ""
+              const isDataUrl = imageSrc.startsWith("data:") || imageSrc.startsWith("blob:")
+
+              const imageNode = (
+                <Image
+                  src={imageSrc}
+                  alt=""
+                  width={1200}
+                  height={800}
+                  unoptimized
+                  className="max-h-[70vh] w-auto h-auto object-contain mx-auto rounded-xs transition-transform duration-200 group-hover:scale-[1.01]"
+                />
+              )
+
+              return (
+                <span className="block my-4 text-center select-none">
+                  {isDataUrl ? (
+                    <span className="inline-block group relative rounded-xs overflow-hidden border border-border/80 shadow-xs">
+                      {imageNode}
+                    </span>
+                  ) : (
+                    <Link
+                      href={imageSrc}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block group relative cursor-zoom-in rounded-xs overflow-hidden border border-border/80 hover:border-emerald-500/70 transition-all shadow-xs"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {imageNode}
+                    </Link>
+                  )}
+                </span>
+              )
+            },
             ul: ({ children }) => (
               <ul className="list-disc list-inside space-y-1 my-1 pl-2">{children}</ul>
             ),

@@ -13,6 +13,8 @@ export interface ChapterImage {
   publicId?: string
   orderIndex: number
   createdAt?: string
+  type?: "header" | "inline"
+  altText?: string
 }
 
 export interface Chapter {

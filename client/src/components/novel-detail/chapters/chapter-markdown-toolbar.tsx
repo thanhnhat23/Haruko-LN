@@ -1,6 +1,6 @@
 "use client"
 
-import React from "react"
+import React, { useRef } from "react"
 import {
   Bold,
   Italic,
@@ -11,6 +11,7 @@ import {
   Code,
   EyeOff,
   Link2,
+  Image as ImageIcon,
   Minus,
   Eye,
   Edit3,
@@ -36,8 +37,7 @@ export function insertChapterMarkdown(
   const selectedText = text.substring(start, end)
   const contentToWrap = selectedText || placeholder
 
-  const newText =
-    text.substring(0, start) + prefix + contentToWrap + suffix + text.substring(end)
+  const newText = text.substring(0, start) + prefix + contentToWrap + suffix + text.substring(end)
   setText(newText)
 
   setTimeout(() => {
@@ -54,6 +54,7 @@ export interface ChapterMarkdownToolbarProps {
   setContent: React.Dispatch<React.SetStateAction<string>>
   isPreview: boolean
   onTogglePreview: () => void
+  onInsertImageFile?: (file: File) => void
 }
 
 export function ChapterMarkdownToolbar({
@@ -62,7 +63,16 @@ export function ChapterMarkdownToolbar({
   setContent,
   isPreview,
   onTogglePreview,
+  onInsertImageFile,
 }: ChapterMarkdownToolbarProps) {
+  const fileInputRef = useRef<HTMLInputElement>(null)
+
+  const handleImageFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+    onInsertImageFile?.(file)
+    e.target.value = ""
+  }
   const handleFormat = (
     prefix: string,
     suffix = prefix,
@@ -212,6 +222,33 @@ export function ChapterMarkdownToolbar({
         >
           <Link2 size={13} />
         </button>
+
+        <button
+          type="button"
+          disabled={isPreview}
+          onClick={() => {
+            if (onInsertImageFile) {
+              fileInputRef.current?.click()
+            } else {
+              handleFormat("\n![](", ")\n", "https://example.com/image.jpg")
+            }
+          }}
+          className={cn(
+            "p-1.5 rounded-md hover:bg-accent/40 hover:text-foreground transition-colors cursor-pointer",
+            isPreview && "opacity-40 cursor-not-allowed"
+          )}
+          title="Chèn ảnh vào bài (Hoặc Ctrl+V dán ảnh trực tiếp)"
+        >
+          <ImageIcon size={13} />
+        </button>
+
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept="image/*"
+          className="hidden"
+          onChange={handleImageFileChange}
+        />
       </div>
 
       {/* Preview Toggle Button */}

@@ -300,11 +300,14 @@ export default function ChapterReaderPage({
             </div>
           </header>
 
-          {/* Chapter Illustrations Gallery */}
-          {chapter.images && chapter.images.length > 0 && (
+          {/* Chapter Illustrations Gallery (Header only) */}
+          {chapter.images &&
+            chapter.images.filter((img) => img.type !== "inline").length > 0 && (
             <section className="space-y-3 p-4 select-none">
               <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-                {chapter.images.map((img, idx) => (
+                {chapter.images
+                  .filter((img) => img.type !== "inline")
+                  .map((img, idx) => (
                   <button
                     key={img.id || idx}
                     type="button"

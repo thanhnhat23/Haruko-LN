@@ -56,7 +56,7 @@ export function ChapterQuickJumpModal({
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-lg max-h-[85vh] flex flex-col bg-card border border-border rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200"
+        className="relative w-full max-w-lg max-h-[85vh] flex flex-col bg-card border border-border rounded-2xl shadow-2xl overflow-hidden no-scrollbar scrollbar-none [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden animate-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -97,7 +97,7 @@ export function ChapterQuickJumpModal({
         </div>
 
         {/* Chapters List by Volume */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-5">
+        <div className="flex-1 overflow-y-auto no-scrollbar scrollbar-none [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden p-4 sm:p-5 space-y-5">
           {filteredVolumes.length === 0 ? (
             <div className="py-12 text-center text-xs text-muted-foreground font-semibold">
               Không tìm thấy chương nào phù hợp với từ khóa.

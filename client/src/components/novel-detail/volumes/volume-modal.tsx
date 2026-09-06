@@ -49,27 +49,14 @@ export function VolumeModal({ modalState, onClose, onSave }: VolumeModalProps) {
   }
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-xs animate-in fade-in duration-200"
-      onClick={onClose}
-    >
-      <div
-        className="relative w-full max-w-md bg-card border border-border rounded-2xl p-5 sm:p-6 shadow-2xl space-y-4 animate-in zoom-in-95 duration-200"
-        onClick={(e) => e.stopPropagation()}
-      >
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-xs animate-in fade-in duration-200">
+      <div className="relative w-full max-w-md bg-card border border-border rounded-2xl p-5 sm:p-6 shadow-2xl space-y-4 animate-in zoom-in-95 duration-200 max-h-[90vh] overflow-y-auto no-scrollbar scrollbar-none [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
         {/* Header Modal */}
         <div className="flex items-center justify-between border-b border-border/40 pb-3">
           <h3 className="text-sm font-black text-foreground uppercase tracking-wide flex items-center gap-2">
             <Layers size={16} className="text-emerald-500" />
             {modalState.mode === "add" ? "Thêm tập mới" : "Chỉnh sửa tập"}
           </h3>
-          <button
-            type="button"
-            onClick={onClose}
-            className="p-1 rounded-full text-muted-foreground hover:text-foreground cursor-pointer"
-          >
-            <X size={16} />
-          </button>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
