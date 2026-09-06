@@ -4,6 +4,7 @@ import React, { useState, useRef } from "react"
 import { Edit3 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { CommentMarkdown } from "@/components/novel-detail/comments/comment-markdown"
+import { cn } from "@/lib/utils"
 import {
   CommentMarkdownToolbar,
   insertMarkdown,
@@ -14,6 +15,8 @@ export interface CommentInlineEditFormProps {
   onSave: (newText: string) => void
   onCancel: () => void
 }
+
+const MAX_COMMENT_LENGTH = 1000
 
 export function CommentInlineEditForm({
   initialText,
@@ -42,25 +45,25 @@ export function CommentInlineEditForm({
 
       <CommentMarkdownToolbar
         onBold={() =>
-          insertMarkdown(textareaRef.current, editText, setEditText, "**", "**", "in đậm")
+          insertMarkdown(textareaRef.current, editText, setEditText, "**", "**", "in đậm", MAX_COMMENT_LENGTH)
         }
         onItalic={() =>
-          insertMarkdown(textareaRef.current, editText, setEditText, "*", "*", "in nghiêng")
+          insertMarkdown(textareaRef.current, editText, setEditText, "*", "*", "in nghiêng", MAX_COMMENT_LENGTH)
         }
         onStrike={() =>
-          insertMarkdown(textareaRef.current, editText, setEditText, "~~", "~~", "gạch ngang")
+          insertMarkdown(textareaRef.current, editText, setEditText, "~~", "~~", "gạch ngang", MAX_COMMENT_LENGTH)
         }
         onSpoiler={() =>
-          insertMarkdown(textareaRef.current, editText, setEditText, "||", "||", "spoiler")
+          insertMarkdown(textareaRef.current, editText, setEditText, "||", "||", "spoiler", MAX_COMMENT_LENGTH)
         }
         onQuote={() =>
-          insertMarkdown(textareaRef.current, editText, setEditText, "> ", "", "trích dẫn")
+          insertMarkdown(textareaRef.current, editText, setEditText, "> ", "", "trích dẫn", MAX_COMMENT_LENGTH)
         }
         onCode={() =>
-          insertMarkdown(textareaRef.current, editText, setEditText, "`", "`", "code")
+          insertMarkdown(textareaRef.current, editText, setEditText, "`", "`", "code", MAX_COMMENT_LENGTH)
         }
         onLink={() =>
-          insertMarkdown(textareaRef.current, editText, setEditText, "[tiêu đề](", ")", "https://")
+          insertMarkdown(textareaRef.current, editText, setEditText, "[tiêu đề](", ")", "https://", MAX_COMMENT_LENGTH)
         }
         isPreview={isPreview}
         onTogglePreview={() => setIsPreview(!isPreview)}
@@ -75,14 +78,24 @@ export function CommentInlineEditForm({
           )}
         </div>
       ) : (
-        <textarea
-          ref={textareaRef}
-          value={editText}
-          onChange={(e) => setEditText(e.target.value)}
-          rows={3}
-          className="w-full text-xs sm:text-sm p-2.5 rounded-xl bg-background border border-border text-foreground placeholder:text-muted-foreground/60 focus:outline-hidden focus:border-foreground transition-colors resize-none"
-          autoFocus
-        />
+        <div className="relative">
+          <textarea
+            ref={textareaRef}
+            value={editText}
+            onChange={(e) => setEditText(e.target.value)}
+            rows={3}
+            maxLength={MAX_COMMENT_LENGTH}
+            className="w-full text-xs sm:text-sm p-2.5 pb-6 rounded-xl bg-background border border-border text-foreground placeholder:text-muted-foreground/60 focus:outline-hidden focus:border-foreground transition-colors resize-none"
+            autoFocus
+          />
+          <div className="absolute right-2.5 bottom-2 text-[10px] font-mono select-none pointer-events-none">
+            <span className={cn(
+              editText.length >= MAX_COMMENT_LENGTH ? "text-rose-500 font-bold" : "text-muted-foreground/60"
+            )}>
+              {editText.length.toLocaleString("vi-VN")}/{MAX_COMMENT_LENGTH.toLocaleString("vi-VN")}
+            </span>
+          </div>
+        </div>
       )}
 
       <div className="flex justify-end gap-2 pt-1">
@@ -99,7 +112,7 @@ export function CommentInlineEditForm({
           type="button"
           size="sm"
           onClick={() => {
-            if (editText.trim()) onSave(editText.trim())
+            if (editText.trim()) onSave(editText.trim().slice(0, MAX_COMMENT_LENGTH))
           }}
           className="h-7 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase cursor-pointer"
         >

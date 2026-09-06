@@ -15,6 +15,8 @@ interface NovelReviewsProps {
   reviews: UserReview[]
 }
 
+const MAX_REVIEW_LENGTH = 2000
+
 export function NovelReviews({
   ratingScore: initialRatingScore,
   ratingCount: initialRatingCount,
@@ -44,16 +46,20 @@ export function NovelReviews({
       const end = textarea.selectionEnd || 0
       const text = reviewText
       const newText = text.substring(0, start) + emojiChar + text.substring(end)
-      setReviewText(newText)
-      setTimeout(() => {
-        textarea.focus()
-        textarea.setSelectionRange(
-          start + emojiChar.length,
-          start + emojiChar.length
-        )
-      }, 0)
+      if (newText.length <= MAX_REVIEW_LENGTH) {
+        setReviewText(newText)
+        setTimeout(() => {
+          textarea.focus()
+          textarea.setSelectionRange(
+            start + emojiChar.length,
+            start + emojiChar.length
+          )
+        }, 0)
+      }
     } else {
-      setReviewText((prev) => prev + emojiChar)
+      if ((reviewText + emojiChar).length <= MAX_REVIEW_LENGTH) {
+        setReviewText((prev) => prev + emojiChar)
+      }
     }
   }
 
@@ -86,7 +92,7 @@ export function NovelReviews({
         isVerified: true,
       },
       score: selectedScore,
-      review: reviewText.trim(),
+      review: reviewText.trim().slice(0, MAX_REVIEW_LENGTH),
       createdAt: "Vừa xong",
       helpfulCount: 0,
     }
@@ -113,7 +119,7 @@ export function NovelReviews({
           return {
             ...r,
             score: editScore,
-            review: editReviewText.trim(),
+            review: editReviewText.trim().slice(0, MAX_REVIEW_LENGTH),
           }
         }
         return r
@@ -209,15 +215,25 @@ export function NovelReviews({
             </div>
           </div>
 
-          <textarea
-            ref={reviewTextareaRef}
-            value={reviewText}
-            onChange={(e) => setReviewText(e.target.value)}
-            rows={3}
-            placeholder="Chia sẻ cảm nhận, đánh giá về nhân vật, cốt truyện hoặc nhóm dịch..."
-            className="w-full text-xs sm:text-sm p-3 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground/60 focus:outline-hidden focus:border-foreground transition-colors resize-none"
-            required
-          />
+          <div className="relative">
+            <textarea
+              ref={reviewTextareaRef}
+              value={reviewText}
+              onChange={(e) => setReviewText(e.target.value)}
+              rows={3}
+              maxLength={MAX_REVIEW_LENGTH}
+              placeholder="Chia sẻ cảm nhận, đánh giá về nhân vật, cốt truyện hoặc nhóm dịch..."
+              className="w-full text-xs sm:text-sm p-3 pb-6 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground/60 focus:outline-hidden focus:border-foreground transition-colors resize-none"
+              required
+            />
+            <div className="absolute right-2.5 bottom-2.5 text-[10px] font-mono select-none pointer-events-none">
+              <span className={cn(
+                reviewText.length >= MAX_REVIEW_LENGTH ? "text-rose-500 font-bold" : "text-muted-foreground/60"
+              )}>
+                {reviewText.length.toLocaleString("vi-VN")}/{MAX_REVIEW_LENGTH.toLocaleString("vi-VN")}
+              </span>
+            </div>
+          </div>
 
           <div className="flex items-center justify-between pt-1">
             {/* Review Emoji Picker */}
@@ -420,12 +436,22 @@ export function NovelReviews({
                     </div>
                   </div>
 
-                  <textarea
-                    value={editReviewText}
-                    onChange={(e) => setEditReviewText(e.target.value)}
-                    rows={3}
-                    className="w-full text-xs sm:text-sm p-2.5 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground/60 focus:outline-hidden focus:border-foreground resize-none"
-                  />
+                  <div className="relative">
+                    <textarea
+                      value={editReviewText}
+                      onChange={(e) => setEditReviewText(e.target.value)}
+                      rows={3}
+                      maxLength={MAX_REVIEW_LENGTH}
+                      className="w-full text-xs sm:text-sm p-2.5 pb-6 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground/60 focus:outline-hidden focus:border-foreground resize-none"
+                    />
+                    <div className="absolute right-2.5 bottom-2 text-[10px] font-mono select-none pointer-events-none">
+                      <span className={cn(
+                        editReviewText.length >= MAX_REVIEW_LENGTH ? "text-rose-500 font-bold" : "text-muted-foreground/60"
+                      )}>
+                        {editReviewText.length.toLocaleString("vi-VN")}/{MAX_REVIEW_LENGTH.toLocaleString("vi-VN")}
+                      </span>
+                    </div>
+                  </div>
 
                   <div className="flex justify-end gap-2">
                     <Button

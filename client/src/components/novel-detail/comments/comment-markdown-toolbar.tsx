@@ -21,10 +21,13 @@ export function insertMarkdown(
   setText: React.Dispatch<React.SetStateAction<string>>,
   prefix: string,
   suffix = prefix,
-  placeholder = "văn bản"
+  placeholder = "văn bản",
+  maxLength?: number
 ) {
   if (!inputEl) {
-    setText((prev) => prev + prefix + placeholder + suffix)
+    const combined = text + prefix + placeholder + suffix
+    if (maxLength && combined.length > maxLength) return
+    setText(combined)
     return
   }
   const start = inputEl.selectionStart || 0
@@ -37,6 +40,7 @@ export function insertMarkdown(
     contentToWrap +
     suffix +
     text.substring(end)
+  if (maxLength && newText.length > maxLength) return
   setText(newText)
   setTimeout(() => {
     inputEl.focus()

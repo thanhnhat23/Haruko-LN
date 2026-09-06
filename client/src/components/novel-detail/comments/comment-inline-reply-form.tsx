@@ -18,6 +18,8 @@ export interface CommentInlineReplyFormProps {
   onCancel: () => void
 }
 
+const MAX_REPLY_LENGTH = 1000
+
 export function CommentInlineReplyForm({
   targetUsername,
   onSubmit,
@@ -62,7 +64,7 @@ export function CommentInlineReplyForm({
 
   const handleSubmit = () => {
     if (!replyText.trim() && !replyImage) return
-    onSubmit(replyText, replyImage || undefined)
+    onSubmit(replyText.slice(0, MAX_REPLY_LENGTH), replyImage || undefined)
   }
 
   return (
@@ -84,25 +86,25 @@ export function CommentInlineReplyForm({
       <div className="p-2.5 rounded-xl bg-card/70 border-2 border-border/80 dark:border-zinc-700/80 space-y-2">
         <CommentMarkdownToolbar
           onBold={() =>
-            insertMarkdown(inputRef.current, replyText, setReplyText, "**", "**", "in đậm")
+            insertMarkdown(inputRef.current, replyText, setReplyText, "**", "**", "in đậm", MAX_REPLY_LENGTH)
           }
           onItalic={() =>
-            insertMarkdown(inputRef.current, replyText, setReplyText, "*", "*", "in nghiêng")
+            insertMarkdown(inputRef.current, replyText, setReplyText, "*", "*", "in nghiêng", MAX_REPLY_LENGTH)
           }
           onStrike={() =>
-            insertMarkdown(inputRef.current, replyText, setReplyText, "~~", "~~", "gạch ngang")
+            insertMarkdown(inputRef.current, replyText, setReplyText, "~~", "~~", "gạch ngang", MAX_REPLY_LENGTH)
           }
           onSpoiler={() =>
-            insertMarkdown(inputRef.current, replyText, setReplyText, "||", "||", "spoiler")
+            insertMarkdown(inputRef.current, replyText, setReplyText, "||", "||", "spoiler", MAX_REPLY_LENGTH)
           }
           onQuote={() =>
-            insertMarkdown(inputRef.current, replyText, setReplyText, "> ", "", "trích dẫn")
+            insertMarkdown(inputRef.current, replyText, setReplyText, "> ", "", "trích dẫn", MAX_REPLY_LENGTH)
           }
           onCode={() =>
-            insertMarkdown(inputRef.current, replyText, setReplyText, "`", "`", "code")
+            insertMarkdown(inputRef.current, replyText, setReplyText, "`", "`", "code", MAX_REPLY_LENGTH)
           }
           onLink={() =>
-            insertMarkdown(inputRef.current, replyText, setReplyText, "[tiêu đề](", ")", "https://")
+            insertMarkdown(inputRef.current, replyText, setReplyText, "[tiêu đề](", ")", "https://", MAX_REPLY_LENGTH)
           }
           isPreview={isPreview}
           onTogglePreview={() => setIsPreview(!isPreview)}
@@ -118,21 +120,30 @@ export function CommentInlineReplyForm({
           </div>
         ) : (
           <div className="flex gap-2 items-center">
-            <input
-              ref={inputRef}
-              type="text"
-              value={replyText}
-              onChange={(e) => setReplyText(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" && !e.shiftKey) {
-                  e.preventDefault()
-                  handleSubmit()
-                }
-              }}
-              placeholder={`Trả lời @${targetUsername}...`}
-              className="flex-1 text-xs p-2 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground/60 focus:outline-hidden focus:border-foreground"
-              autoFocus
-            />
+            <div className="relative flex-1">
+              <input
+                ref={inputRef}
+                type="text"
+                value={replyText}
+                maxLength={MAX_REPLY_LENGTH}
+                onChange={(e) => setReplyText(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" && !e.shiftKey) {
+                    e.preventDefault()
+                    handleSubmit()
+                  }
+                }}
+                placeholder={`Trả lời @${targetUsername}...`}
+                className="w-full text-xs p-2 pr-14 rounded-lg bg-background border border-border text-foreground placeholder:text-muted-foreground/60 focus:outline-hidden focus:border-foreground"
+                autoFocus
+              />
+              <span className={cn(
+                "absolute right-2 top-1/2 -translate-y-1/2 text-[9px] font-mono select-none pointer-events-none",
+                replyText.length >= MAX_REPLY_LENGTH ? "text-rose-500 font-bold" : "text-muted-foreground/60"
+              )}>
+                {replyText.length}/{MAX_REPLY_LENGTH}
+              </span>
+            </div>
 
             <input
               type="file"
@@ -157,7 +168,11 @@ export function CommentInlineReplyForm({
 
               <EmojiPickerPopover
                 isOpen={showEmojiPicker}
-                onEmojiSelect={(emojiChar) => setReplyText((prev) => prev + emojiChar)}
+                onEmojiSelect={(emojiChar) => {
+                  if ((replyText + emojiChar).length <= MAX_REPLY_LENGTH) {
+                    setReplyText((prev) => prev + emojiChar)
+                  }
+                }}
                 className="top-full mt-2 right-0 left-auto"
                 height="h-64"
                 width="w-60 sm:w-68"

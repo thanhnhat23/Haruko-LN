@@ -46,6 +46,8 @@ interface DeleteConfirmState {
   replyId?: number
 }
 
+const MAX_COMMENT_LENGTH = 1000
+
 export function NovelComments({ comments: initialComments }: NovelCommentsProps) {
   const {
     comments,
@@ -170,25 +172,25 @@ export function NovelComments({ comments: initialComments }: NovelCommentsProps)
         <form onSubmit={handleSubmitMainComment} className="space-y-3">
           <CommentMarkdownToolbar
             onBold={() =>
-              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "**", "**", "bold")
+              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "**", "**", "bold", MAX_COMMENT_LENGTH)
             }
             onItalic={() =>
-              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "*", "*", "italic")
+              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "*", "*", "italic", MAX_COMMENT_LENGTH)
             }
             onStrike={() =>
-              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "~~", "~~", "strike")
+              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "~~", "~~", "strike", MAX_COMMENT_LENGTH)
             }
             onSpoiler={() =>
-              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "||", "||", "spoiler")
+              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "||", "||", "spoiler", MAX_COMMENT_LENGTH)
             }
             onQuote={() =>
-              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "> ", "", "quote")
+              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "> ", "", "quote", MAX_COMMENT_LENGTH)
             }
             onCode={() =>
-              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "`", "`", "code")
+              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "`", "`", "code", MAX_COMMENT_LENGTH)
             }
             onLink={() =>
-              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "[title](", ")", "https://")
+              insertMarkdown(mainTextareaRef.current, newCommentText, setNewCommentText, "[title](", ")", "https://", MAX_COMMENT_LENGTH)
             }
             isPreview={isMainPreview}
             onTogglePreview={() => setIsMainPreview(!isMainPreview)}
@@ -215,14 +217,24 @@ export function NovelComments({ comments: initialComments }: NovelCommentsProps)
                 )}
               </div>
             ) : (
-              <textarea
-                ref={mainTextareaRef}
-                value={newCommentText}
-                onChange={(e) => setNewCommentText(e.target.value)}
-                rows={3}
-                placeholder="Tham gia thảo luận..."
-                className="flex-1 text-xs sm:text-sm p-3 rounded-xl bg-background border border-border text-foreground placeholder:text-muted-foreground/60 focus:outline-hidden focus:border-foreground transition-colors resize-none"
-              />
+              <div className="relative flex-1">
+                <textarea
+                  ref={mainTextareaRef}
+                  value={newCommentText}
+                  onChange={(e) => setNewCommentText(e.target.value)}
+                  rows={3}
+                  maxLength={MAX_COMMENT_LENGTH}
+                  placeholder="Tham gia thảo luận..."
+                  className="w-full text-xs sm:text-sm p-3 pb-6 rounded-xl bg-background border border-border text-foreground placeholder:text-muted-foreground/60 focus:outline-hidden focus:border-foreground transition-colors resize-none"
+                />
+                <div className="absolute right-2.5 bottom-2 text-[10px] font-mono select-none pointer-events-none">
+                  <span className={cn(
+                    newCommentText.length >= MAX_COMMENT_LENGTH ? "text-rose-500 font-bold" : "text-muted-foreground/60"
+                  )}>
+                    {newCommentText.length.toLocaleString("vi-VN")}/{MAX_COMMENT_LENGTH.toLocaleString("vi-VN")}
+                  </span>
+                </div>
+              </div>
             )}
           </div>
 
@@ -275,7 +287,11 @@ export function NovelComments({ comments: initialComments }: NovelCommentsProps)
 
                 <EmojiPickerPopover
                   isOpen={showMainEmojiPicker}
-                  onEmojiSelect={(emojiChar) => setNewCommentText((prev) => prev + emojiChar)}
+                  onEmojiSelect={(emojiChar) => {
+                    if ((newCommentText + emojiChar).length <= MAX_COMMENT_LENGTH) {
+                      setNewCommentText((prev) => prev + emojiChar)
+                    }
+                  }}
                   className="top-full mt-2 left-0"
                 />
               </div>

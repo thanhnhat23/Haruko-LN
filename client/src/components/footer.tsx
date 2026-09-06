@@ -24,7 +24,7 @@ export function Footer() {
                         </span>
                     </Link>
                     <p className="text-[11px] leading-relaxed text-muted-foreground/80 max-w-sm">
-                        Cổng đọc Light Novel trực tuyến miễn phí hàng đầu. Nơi hội tụ các dịch giả tài năng và hệ thống dịch thuật AI thông minh, mang đến trải nghiệm đọc hoàn hảo nhất cho độc giả Việt Nam.
+                        Cổng đọc Light Novel trực tuyến miễn phí hàng đầu. Nơi hội tụ các dịch giả tài năng và thư viện truyện phong phú, mang đến trải nghiệm đọc hoàn hảo nhất cho độc giả Việt Nam.
                     </p>
                     <div className="flex items-center gap-3 pt-2">
                     <Link href="#" className="p-2 rounded-lg bg-accent/40 hover:bg-accent/80 hover:text-foreground border border-border/50 transition-all flex items-center justify-center">
@@ -49,7 +49,7 @@ export function Footer() {
                 <h4 className="font-extrabold text-[10px] uppercase tracking-wider text-foreground">Danh Mục</h4>
                 <ul className="space-y-2 font-medium">
                     <li><Link href="#" className="hover:text-foreground transition-colors">Truyện dịch</Link></li>
-                    <li><Link href="#" className="hover:text-foreground transition-colors">AI dịch</Link></li>
+                    <li><Link href="#" className="hover:text-foreground transition-colors">Ngẫu nhiên</Link></li>
                     <li><Link href="#" className="hover:text-foreground transition-colors">Đã hoàn thành</Link></li>
                     <li><Link href="#" className="hover:text-foreground transition-colors">Top truyện</Link></li>
                 </ul>
