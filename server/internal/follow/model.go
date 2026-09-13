@@ -7,8 +7,8 @@ import (
 )
 
 type Follow struct {
-	follow_id uint      `gorm:"primaryKey"`
-	user_id   uuid.UUID `gorm:"type: UUID; not null;uniqueIndex:index_user_post"`
-	post_id   uint      `gorm:"not null;uniqueIndex:index_user_post"`
-	createAt  time.Time
+	Follow_ID uint      `gorm:"primaryKey"`
+	User_ID   uuid.UUID `gorm:"type:char(36);not null;uniqueIndex:index_user_post" validate:"required"`
+	Post_ID   uint      `gorm:"not null;uniqueIndex:index_user_post" validate:"required"`
+	CreateAt  time.Time `gorm:"autoCreateTime"`
 }

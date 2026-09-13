@@ -7,11 +7,14 @@ import (
 )
 
 type Comment struct {
-	comment_id uint      `gorm:"primaryKey"`
-	chapter_id uint      `gorm:"not null;index"`
-	user_id    uuid.UUID `gorm:"type:uuid;not null;index"`
-	icon_id    uint
-	image      string `gorm:"type: varchar(255);not null"`
-	createAt   time.Time
-	updateAt   time.Time
+	Comment_ID    uint `gorm:"primaryKey"`
+	Chapter_ID    uint `gorm:"not null;index" validate:"required"`
+	Post_ID       uint `gorm:"not null;index" validate:"required"`
+	Parent_CMT_ID uint
+	User_ID       uuid.UUID `gorm:"type:char(36);not null;index" validate:"required"`
+	Icon_ID       uint
+	Image         string    `gorm:"type:varchar(255)"`
+	CreateAt      time.Time `gorm:"autoCreateTime"`
+	UpdateAt      time.Time `gorm:"autoUpdateTime"`
+	DeleteAt      time.Time
 }

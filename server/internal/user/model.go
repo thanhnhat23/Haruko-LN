@@ -4,29 +4,44 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	"gorm.io/gorm"
 )
 
-type roleEnum string
+type RoleEnum string
 
 const (
-	roleAdmin  roleEnum = "admin"
-	roleTrans  roleEnum = "trans"
-	roleReader roleEnum = "reader"
+	roleAdmin  RoleEnum = "admin"
+	roleTrans  RoleEnum = "trans"
+	roleReader RoleEnum = "reader"
 )
 
 type User struct {
-	user_id      uuid.UUID `gorm:"type:uuid; primaryKey"`
-	username     string    `gorm:"type:nvarchar(255);not null;uniqueIndex" validate:"required,min=3,max=20"`
-	email        string    `gorm:"type:varchar(255);not null;uniqueIndex" validate:"required,email"`
-	passwordHash string    `gorm:"type:varchar(255);not null"`
-	birthday     time.Time `validate:"omitempty"	`
-	role         roleEnum  `gorm:"type:varchar(255);not null;default:reader" validate:"required,oneof=reader trans admin"`
-	avatar       string    `gorm:"type:varchar(255)"`
-	background   string    `gorm:"type:varchar(255)"`
-	bio          string    `gorm:"type:nvarchar(255)"`
-	isVerify     bool      `gorm:"default:false"`
-	isBanned     bool      `gorm:"default:false"`
-	createAt     time.Time
-	updateAt     time.Time
-	deleteAt     time.Time
+	User_ID      uuid.UUID `gorm:"type:char(36);primaryKey"`
+	Username     string    `gorm:"type:nvarchar(255);not null;uniqueIndex" validate:"required,min=3,max=20"`
+	Email        string    `gorm:"type:varchar(255);not null;uniqueIndex" validate:"required,email"`
+	PasswordHash string    `gorm:"type:varchar(255)" validate:"required"`
+	Birthday     *time.Time `validate:"omitempty"`
+	Role         RoleEnum  `gorm:"type:varchar(255);not null;default:reader" validate:"required,oneof=reader trans admin"`
+	Avatar       string    `gorm:"type:varchar(255)"`
+	Background   string    `gorm:"type:varchar(255)"`
+	Bio          string    `gorm:"type:nvarchar(255)"`
+	IsVerify     bool      `gorm:"default:false"`
+	IsBanned     bool      `gorm:"default:false"`
+	CreateAt     time.Time `gorm:"autoCreateTime"`
+	UpdateAt     time.Time `gorm:"autoUpdateTime"`
+	DeleteAt     *time.Time
+	DeletedAt    gorm.DeletedAt `gorm:"index"`
+	IsTrans      bool
+}
+
+// BeforeCreate sinh User_ID nếu chưa có, tránh insert UUID Nil trùng khóa chính.
+func (u *User) BeforeCreate(tx *gorm.DB) error {
+	if u.User_ID == uuid.Nil {
+		id, err := uuid.NewV7()
+		if err != nil {
+			return err
+		}
+		u.User_ID = id
+	}
+	return nil
 }

@@ -13,13 +13,13 @@ const (
 )
 
 type Notification struct {
-	notification_id uint             `gorm:"primaryKey"`
-	user_id         uuid.UUID        `gorm:"type: uuid; not null"`
-	post_id         uint             `gorm:"not null"`
-	chapter_id      uint             `gorm:"not null"`
-	title           string           `gorm:"type: nvarchar(255);not null"`
-	content         string           `gorm:"type: longtext; not null" validate:"required"`
-	noti_type       NotificationType `gorm:"type: int"`
-	isRead          bool
-	creatAt         time.Time
+	Notification_ID uint             `gorm:"primaryKey"`
+	User_ID         uuid.UUID        `gorm:"type:char(36);not null;index" validate:"required"`
+	Post_ID         uint             `gorm:"not null" validate:"required"`
+	Chapter_ID      uint             `gorm:"not null" validate:"required"`
+	Title           string           `gorm:"type:nvarchar(255);not null" validate:"required"`
+	Content         string           `gorm:"type:longtext;not null" validate:"required"`
+	NotiType        NotificationType `gorm:"type:int"`
+	IsRead          bool             `gorm:"default:false"`
+	CreatAt         time.Time        `gorm:"autoCreateTime"`
 }

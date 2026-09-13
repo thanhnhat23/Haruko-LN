@@ -4,27 +4,29 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	"gorm.io/gorm"
 )
 
-type postStatus string
+type PostStatus string
 
 const (
-	End  postStatus = "End"
-	Drop postStatus = "Drop"
+	End  PostStatus = "End"
+	Drop PostStatus = "Drop"
 )
 
 type Post struct {
-	post_id     uint       `gorm:"primaryKey"`
-	user_id     uuid.UUID  `gorm:"type:uuid; not null;index"`
-	thumbnail   string     `gorm:"type: varchar(255)"`
-	banner      string     `gorm:"type: varchar(255)"`
-	slug        string     `gorm:"type: varchar(255); not null;uniqueIndex" validate:"required"`
-	author      string     `gorm:"type: nvarchar(255)"`
-	description string     `gorm:"type: nvarchar(255)"`
-	status      postStatus `gorm:"type:varchar(255)" validate:"required,oneof= Drop End"`
-	views       uint       `gorm:"default:0"`
-	isDeleted   bool       `gorm:"default:0"`
-	deleteAt    time.Time
-	createAt    time.Time
-	updateAt    time.Time
+	Post_ID     uint       `gorm:"primaryKey"`
+	User_ID     uuid.UUID  `gorm:"type:char(36);not null;index" validate:"required"`
+	Thumbnail   string     `gorm:"type:varchar(255)"`
+	Banner      string     `gorm:"type:varchar(255)"`
+	Slug        string     `gorm:"type:varchar(255);not null;uniqueIndex" validate:"required"`
+	Author      string     `gorm:"type:nvarchar(255)"`
+	Description string     `gorm:"type:nvarchar(255)"`
+	Status      PostStatus `gorm:"type:varchar(255)" validate:"required,oneof=Drop End"`
+	Views       uint       `gorm:"default:0"`
+	IsDeleted   bool       `gorm:"default:false"`
+	DeleteAt    time.Time
+	DeletedAt   gorm.DeletedAt `gorm:"index"`
+	CreateAt    time.Time      `gorm:"autoCreateTime"`
+	UpdateAt    time.Time      `gorm:"autoUpdateTime"`
 }

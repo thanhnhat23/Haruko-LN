@@ -1,7 +1,7 @@
 package tag
 
 type Tag struct {
-	tag_id uint   `gorm:"primaryKey"`
-	name   string `gorm:"type:nvarchar(255);not null"`
-	slug   string `gorm:"type:varchar(255)"`
+	Tag_ID uint   `gorm:"primaryKey"`
+	Name   string `gorm:"type:nvarchar(255);not null" validate:"required"`
+	Slug   string `gorm:"type:varchar(255)"`
 }
