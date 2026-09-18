@@ -2,14 +2,13 @@ package bookmark
 
 import (
 	"time"
+
 	"github.com/google/uuid"
-	"github.com/go-playground/validator/v10"
 )
 
 type Bookmark struct {
-	bookmark_id uint `gorm:"primaryKey"`
-	create_at time.Time
-	user_id uuid.UUID `gorm:"type: uuid;not null"`
-	post_id uint `gorm:"not null"`
-
+	Bookmark_ID uint      `gorm:"primaryKey"`
+	CreateAt    time.Time `gorm:"autoCreateTime"`
+	User_ID     uuid.UUID `gorm:"type:char(36);not null;uniqueIndex:idx_user_post" validate:"required"`
+	Post_ID     uint      `gorm:"not null;uniqueIndex:idx_user_post" validate:"required"`
 }

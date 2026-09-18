@@ -1,0 +1,9 @@
+# Use this workspace to collaborate
+workspace:
+  id: f19268f2-d499-47bc-852f-46daf26a1306
+
+localResources:
+  specs:
+    - ../proto/chapter.proto
+    - ../proto/common.proto
+    - ../proto/crawler.proto
