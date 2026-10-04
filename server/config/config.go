@@ -23,10 +23,30 @@ type DBConfig struct{
 	Name string
 	Password string
 }
+
+type OAuthProviderConfig struct{
+	ClientID     string
+	ClientSecret string
+	RedirectURL  string
+}
+
+type OAuthConfig struct{
+	Google   OAuthProviderConfig
+	Discord  OAuthProviderConfig
+	Facebook OAuthProviderConfig
+	Twitter  OAuthProviderConfig
+}
+
 type Config struct{
+	Env string
 	Port string
 	DB DBConfig
 	JWT JWTConfig
+	OAuth OAuthConfig
+}
+
+func (o OAuthProviderConfig) Enabled() bool {
+	return o.ClientID != "" && o.ClientSecret != ""
 }
 func getENV(key,defaultValue string) string{
 	value  := os.Getenv(key)
@@ -70,6 +90,7 @@ func Load() *Config{
 		log.Fatalf("Can't read .env")
 	}
 	return &Config{
+		Env: getENV("APP_ENV", "development"),
 		Port: getENV("PORT", "8080"),
 		DB: DBConfig{
 			Host: getENV("DB_HOST","localhost"),
@@ -83,6 +104,20 @@ func Load() *Config{
 			Access: getDurationENV("JWT_ACCESS",15*time.Minute),
 			Refesh: getDurationENV("JWT_REFESH",168*time.Hour),
 		},
+		OAuth: OAuthConfig{
+			Google:   getOAuthENV("GOOGLE"),
+			Discord:  getOAuthENV("DISCORD"),
+			Facebook: getOAuthENV("FACEBOOK"),
+			Twitter:  getOAuthENV("TWITTER"),
+		},
+
+	}
+}
+func getOAuthENV(prefix string) OAuthProviderConfig{
+	return OAuthProviderConfig{
+		ClientID:     getENV(prefix+"_CLIENT_ID", ""),
+		ClientSecret: getENV(prefix+"_CLIENT_SECRET", ""),
+		RedirectURL:  getENV(prefix+"_REDIRECT_URL", ""),
 	}
 }
 func (d DBConfig) DSN() string {

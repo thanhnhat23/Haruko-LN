@@ -2,73 +2,102 @@ package auth
 
 import (
 	"context"
-	"encoding/json"
 	"errors"
 	"fmt"
-	"net/http"
+	"math/rand/v2"
+	"strings"
 	"time"
 
-	"github.com/thanhnhat23/Haruko-LN/internal/user"
-
-	"github.com/golang-jwt/jwt/v5"
-	"github.com/google/uuid"
-	"golang.org/x/oauth2"
 	"gorm.io/gorm"
+
+	"github.com/thanhnhat23/Haruko-LN/infrastructure/oauth"
+	"github.com/thanhnhat23/Haruko-LN/internal/user"
+	"github.com/thanhnhat23/Haruko-LN/pkg/jwt"
 )
 
 const (
-	ProviderGoogle = "google"
-	userInfoURL    = "https://www.googleapis.com/oauth2/v3/userinfo"
-	jwtIssuer      = "haruko-ln"
-	httpTimeout    = 10 * time.Second
+	httpTimeout      = 10 * time.Second
+	maxAvatarLen     = 255
+	maxUsernameLen   = 20
+	maxUsernameBase  = 15
+	usernameAttempts = 5
 )
 
 var (
-	ErrEmailNotVerified = errors.New("email chưa được Google xác minh")
+	ErrUnknownProvider  = errors.New("provider không được hỗ trợ")
+	ErrEmailMissing     = errors.New("tài khoản không cung cấp email")
+	ErrEmailNotVerified = errors.New("email chưa được xác minh")
+	ErrEmailConflict    = errors.New("email đã thuộc về một tài khoản chưa xác minh")
+	ErrUserBanned       = errors.New("tài khoản đã bị khoá")
+	ErrAccountDeleted   = errors.New("tài khoản đã bị xoá")
 	ErrExchangeFailed   = errors.New("không đổi được authorization code")
 )
-type Service struct{
-	repo *Repository
-	oauthConfig *oauth2.Config
+
+type Service struct {
+	repo      *Repository
+	providers map[string]oauth.Provider
 	jwtSecret []byte
-	tokenTTL time.Duration
+	tokenTTL  time.Duration
 }
-func NewService(repo *Repository, cfg *oauth2.Config, jwtSecret []byte, tokenTTL time.Duration) *Service {
+
+func NewService(repo *Repository, providers []oauth.Provider, jwtSecret []byte, tokenTTL time.Duration) *Service {
+	m := make(map[string]oauth.Provider, len(providers))
+	for _, p := range providers {
+		m[p.Name()] = p
+	}
 	return &Service{
 		repo:      repo,
-		oauthConfig:  cfg,
+		providers: m,
 		jwtSecret: jwtSecret,
 		tokenTTL:  tokenTTL,
 	}
 }
-func (s *Service) AuthURL(state, verifier string) string{
- 	return s.oauthConfig.AuthCodeURL(state,oauth2.S256ChallengeOption(verifier))
+
+func (s *Service) provider(name string) (oauth.Provider, error) {
+	p, ok := s.providers[name]
+	if !ok {
+		return nil, ErrUnknownProvider
+	}
+	return p, nil
 }
 
-func (s *Service) HandleGoogleCallBack(ctxt context.Context, code, verifier string) (*LoginResponse, error) {
-	ctxt, cancel := context.WithTimeout(ctxt, httpTimeout)
+func (s *Service) AuthURL(providerName, state, verifier string) (string, error) {
+	p, err := s.provider(providerName)
+	if err != nil {
+		return "", err
+	}
+	return p.AuthCodeURL(state, verifier), nil
+}
+
+func (s *Service) HandleCallback(ctx context.Context, providerName, code, verifier string) (*LoginResponse, error) {
+	p, err := s.provider(providerName)
+	if err != nil {
+		return nil, err
+	}
+	ctx, cancel := context.WithTimeout(ctx, httpTimeout)
 	defer cancel()
-	token, err := s.oauthConfig.Exchange(ctxt, code, oauth2.VerifierOption(verifier))
+
+	token, err := p.Exchange(ctx, code, verifier)
 	if err != nil {
-		return nil, fmt.Errorf("%w: %v", ErrExchangeFailed, err)
+		return nil, fmt.Errorf("%w: %w", ErrExchangeFailed, err)
 	}
-	info, err := s.fetchGoogleUser(ctxt, token)
-	if err != nil {
-		return nil, err
-	}
-	if !info.EmailVerified {
-		return nil, ErrEmailNotVerified
-	}
-	u, err := s.findOrCreateUser(info)
+	info, err := p.FetchUser(ctx, token)
 	if err != nil {
 		return nil, err
 	}
-	jwttoken, err := s.issueJWT(u.User_ID)
+	u, err := s.findOrCreateUser(ctx, p.Name(), info)
+	if err != nil {
+		return nil, err
+	}
+	if err := usable(u); err != nil {
+		return nil, err
+	}
+	accessToken, err := jwt.Sign(u.User_ID, s.jwtSecret, s.tokenTTL)
 	if err != nil {
 		return nil, err
 	}
 	return &LoginResponse{
-		AccessToken: jwttoken,
+		AccessToken: accessToken,
 		ExpiresIn:   int(s.tokenTTL.Seconds()),
 		User: UserInfo{
 			UserID: u.User_ID,
@@ -78,77 +107,114 @@ func (s *Service) HandleGoogleCallBack(ctxt context.Context, code, verifier stri
 		},
 	}, nil
 }
-func (s *Service) fetchGoogleUser(ctx context.Context, tok *oauth2.Token) (*GoogleUserInfo, error) {
-	client := s.oauthConfig.Client(ctx, tok)
-	resp, err := client.Get(userInfoURL)
-	if err != nil {
-		return nil, fmt.Errorf("gọi userinfo: %w", err)
+
+func (s *Service) findOrCreateUser(ctx context.Context, provider string, info *oauth.UserInfo) (*user.User, error) {
+	acc, err := s.repo.FindOAuthAcc(ctx, provider, info.ProviderUserID)
+	if err == nil {
+		return s.repo.FindUserByID(ctx, acc.UserID)
 	}
-	defer resp.Body.Close()
-	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("userinfo trả về status %d", resp.StatusCode)
+	if !errors.Is(err, gorm.ErrRecordNotFound) {
+		return nil, err
 	}
-	var info GoogleUserInfo
-	if err := json.NewDecoder(resp.Body).Decode(&info); err != nil {
-		return nil, fmt.Errorf("decode userinfo: %w", err)
+
+	if info.Email == "" {
+		return nil, ErrEmailMissing
 	}
-	if info.Sub == "" {
-		return nil, errors.New("userinfo thiếu trường sub")
+	if !info.EmailVerified {
+		return nil, ErrEmailNotVerified
 	}
-	return &info, nil
+
+	newAcc := &OAuthAccount{Provider: provider, ProviderUserID: info.ProviderUserID}
+
+	u, err := s.repo.FindUserByEmail(ctx, info.Email)
+	if err == nil {
+		return s.linkExisting(ctx, u, newAcc)
+	}
+	if !errors.Is(err, gorm.ErrRecordNotFound) {
+		return nil, err
+	}
+	return s.createUser(ctx, info, newAcc)
 }
 
-func (s *Service) findOrCreateUser(info *GoogleUserInfo) (*user.User, error) {
-	acc, err := s.repo.FindOAuthAcc(ProviderGoogle, info.Sub)
-	if err == nil {
-		return s.repo.FindUserByID(acc.UserID)
-	}
-	if !errors.Is(err, gorm.ErrRecordNotFound) {
+func (s *Service) linkExisting(ctx context.Context, u *user.User, acc *OAuthAccount) (*user.User, error) {
+	if err := usable(u); err != nil {
 		return nil, err
 	}
-	newAcc := &OAuthAccount{
-		Provider:       ProviderGoogle,
-		ProviderUserID: info.Sub,
-	} 
-	u, err := s.repo.FindUserByEmail(info.Email)
-	if err == nil {
-		newAcc.UserID = u.User_ID
-		if err := s.repo.LinkOAuthAcc(newAcc); err != nil {
-			if errors.Is(err, ErrDuplicateLink) {
-				return u, nil
-			}
-			return nil, err
-		}
-		return u, nil
+	if !u.IsVerify {
+		return nil, ErrEmailConflict
 	}
-	if !errors.Is(err, gorm.ErrRecordNotFound) {
+	acc.UserID = u.User_ID
+	if err := s.repo.LinkOAuthAcc(ctx, acc); err != nil && !errors.Is(err, ErrDuplicateLink) {
 		return nil, err
 	}
-	newUser := &user.User{
-		Email:  info.Email,
-		Username:   info.Name,
-		Avatar: info.Avatar,
+	return u, nil
+}
+
+func (s *Service) createUser(ctx context.Context, info *oauth.UserInfo, acc *OAuthAccount) (*user.User, error) {
+	name, err := s.uniqueUsername(ctx, info.UserName)
+	if err != nil {
+		return nil, err
+	}
+	u := &user.User{
+		Email:    info.Email,
+		Username: name,
+		Avatar:   fitAvatar(info.AvatarURL),
 		IsVerify: true,
 	}
-	if err := s.repo.CreateUserWithOAuth(newUser, newAcc); err != nil {
-		if errors.Is(err, ErrDuplicateLink) {
-			acc, err2 := s.repo.FindOAuthAcc(ProviderGoogle, info.Sub)
-			if err2 == nil {
-				return s.repo.FindUserByID(acc.UserID)
-			}
+	err = s.repo.CreateUserWithOAuth(ctx, u, acc)
+	if errors.Is(err, ErrDuplicateLink) {
+		existing, findErr := s.repo.FindOAuthAcc(ctx, acc.Provider, acc.ProviderUserID)
+		if findErr != nil {
+			return nil, findErr
 		}
+		return s.repo.FindUserByID(ctx, existing.UserID)
+	}
+	if err != nil {
 		return nil, err
 	}
-	return newUser, nil
+	return u, nil
 }
 
-func (s *Service) issueJWT(userID uuid.UUID) (string, error) {
-	now := time.Now()
-	claims := jwt.RegisteredClaims{
-		Subject:   userID.String(),
-		Issuer:    jwtIssuer,
-		IssuedAt:  jwt.NewNumericDate(now),
-		ExpiresAt: jwt.NewNumericDate(now.Add(s.tokenTTL)),
+func (s *Service) uniqueUsername(ctx context.Context, displayName string) (string, error) {
+	base := strings.TrimSpace(displayName)
+	if base == "" {
+		base = "user"
 	}
-	return jwt.NewWithClaims(jwt.SigningMethodHS256, claims).SignedString(s.jwtSecret)
+	name := truncateRunes(base, maxUsernameLen)
+	for range usernameAttempts {
+		taken, err := s.repo.UsernameExists(ctx, name)
+		if err != nil {
+			return "", err
+		}
+		if !taken {
+			return name, nil
+		}
+		name = fmt.Sprintf("%s_%04d", truncateRunes(base, maxUsernameBase), rand.IntN(10000))
+	}
+	return "", errors.New("không tạo được username không trùng")
+}
+
+func usable(u *user.User) error {
+	switch {
+	case u.DeletedAt.Valid:
+		return ErrAccountDeleted
+	case u.IsBanned:
+		return ErrUserBanned
+	}
+	return nil
+}
+
+func fitAvatar(url string) string {
+	if len(url) > maxAvatarLen {
+		return ""
+	}
+	return url
+}
+
+func truncateRunes(s string, n int) string {
+	r := []rune(s)
+	if len(r) <= n {
+		return s
+	}
+	return string(r[:n])
 }

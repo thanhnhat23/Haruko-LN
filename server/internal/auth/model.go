@@ -10,8 +10,8 @@ import (
 
 type OAuthAccount struct{
 	ID uuid.UUID `gorm:"type:varchar(255);primaryKey"`
-	UserID uuid.UUID `gorm:"type:varchar(255);not null;index"`
-	Provider string `gorm:"type:varchar(255);uniqueIndex:uq_oauth_provider_uid"`
+	UserID uuid.UUID `gorm:"type:char(36);not null;index"`
+	Provider string `gorm:"type:varchar(32);not null;uniqueIndex:uq_oauth_provider_uid"`
 	ProviderUserID string `gorm:"type:varchar(255);not null;uniqueIndex:uq_oauth_provider_uid"`
 	CreateAt time.Time `gorm:"not null;autoCreateTime" `
 }

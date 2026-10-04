@@ -34,7 +34,6 @@ type User struct {
 	IsTrans      bool
 }
 
-// BeforeCreate sinh User_ID nếu chưa có, tránh insert UUID Nil trùng khóa chính.
 func (u *User) BeforeCreate(tx *gorm.DB) error {
 	if u.User_ID == uuid.Nil {
 		id, err := uuid.NewV7()
